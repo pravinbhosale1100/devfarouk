@@ -2,7 +2,7 @@ import Image from "next/image";
 
 const Header = () => {
   return (
-    <header className="flex flex-row justify-between items-center h-[28rem] mt-2 ">
+    <header className="flex flex-row justify-between items-center h-[28rem] mt-10 ">
       <section className="w-[50%] relative  px-24 py-24 flex flex-col gap-4">
         <div className="flex flex-col gap-2">
           <h5 className=" font-medium text-lg">Hi, I'm</h5>
@@ -18,14 +18,15 @@ const Header = () => {
       </section>
       <section
         className=" flex justify-center items-center w-[50%] bg-cover bg-center h-full"
-        style={{ backgroundImage: "url('/patterns/pattern-8.svg')" }}
+        style={{ backgroundImage: "url('/patterns/pattern-4.svg')" }}
       >
         <Image
           alt="profile image"
           src={"/images/profile.jpg"}
+          style={{ borderRadius: "10%" }}
           objectFit="cover"
-          height={"400"}
-          width={"200"}
+          height={"100"}
+          width={"300"}
         />
       </section>
     </header>
