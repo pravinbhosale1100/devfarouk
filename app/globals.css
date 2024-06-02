@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-hex: #4d1f00;
+  --background-start-hex: #ffe1cc;
+  --background-end-hex: #fec59d;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-hex: #4d1f00;
+    --background-start-hex: #ffe1cc;
+    --background-end-hex: #fec59d;
+  }
+}
+
+body {
+  color: var(--foreground-hex);
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  background: linear-gradient(
+    to left,
+    var(--background-start-hex),
+    var(--background-end-hex)
+  );
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
