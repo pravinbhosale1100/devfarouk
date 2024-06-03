@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 const Header = () => {
   return (
@@ -20,12 +21,12 @@ const Header = () => {
         </div>
       </section>
       <section
-        className=" flex justify-center items-center w-[50%] h-full bg-right bg-contain bg-no-repeat "
-        style={{ backgroundImage: "url('/svgs/profile-bg.png')" }}
+        className="relative flex justify-center items-center w-[50%] h-full bg-right bg-contain bg-no-repeat "
+        style={{ backgroundImage: "url('/svgs/profile-bg.svg')" }}
       >
         <Image
           alt="profile image"
-          src={"/images/profile-12.jpg"}
+          src={"/images/profile-7.jpg"}
           style={{
             borderRadius: "50%",
             filter: "brightness(0.9) contrast(1.1)",
@@ -34,6 +35,18 @@ const Header = () => {
           height={"150"}
           width={"300"}
         />
+
+        <Link
+          href="#message"
+          className="p-4 bg-white absolute left-[48%] bottom-[12%] rounded-[50%]"
+        >
+          <Image
+            alt="message"
+            src={"/svgs/message-programming.svg"}
+            width={20}
+            height={20}
+          />
+        </Link>
       </section>
     </header>
   );
