@@ -4,7 +4,7 @@ const Navbar = () => {
   return (
     <section className="relative flex flex-row w-full">
       <div className=" w-[60%]">
-        <nav className=" w-full flex flex-row justify-between items-center border-r-2 border-b-2 border-r-secondary-color-2 border-b-secondary-color-2 border-solid py-6 px-24  ">
+        <nav className=" w-full flex flex-row justify-between items-center border-r-2 border-b-2 border-r-secondary-color-2 border-b-secondary-color-2 border-solid py-6 px-40">
           <div>
             <h1>Dev Farouk</h1>
           </div>

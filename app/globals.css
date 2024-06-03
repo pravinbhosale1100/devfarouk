@@ -12,7 +12,7 @@
   :root {
     --foreground-hex: #4d1f00;
     --background-start-hex: #ffe1cc;
-    --background-end-hex: #fec59d;
+    --background-end-hex: #f2ca99;
   }
 }
 
@@ -21,13 +21,12 @@ body {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  background: linear-gradient(
-    to left,
-    var(--background-start-hex),
-    var(--background-end-hex)
+  background: radial-gradient(
+    circle,
+    var(--background-start-hex) 0%,
+    var(--background-end-hex) 50%
   );
 }
-
 @layer utilities {
   .text-balance {
     text-wrap: balance;
