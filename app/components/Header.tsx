@@ -19,16 +19,15 @@ const Header = () => {
           </p>
         </div>
       </section>
-      <section className=" flex justify-center items-center w-[50%] h-full">
+      <section
+        className=" flex justify-center items-center w-[50%] h-full bg-right bg-contain bg-no-repeat "
+        style={{ backgroundImage: "url('/svgs/profile-bg.png')" }}
+      >
         <Image
           alt="profile image"
-          src={"/images/profile-7.jpg"}
+          src={"/images/profile-12.jpg"}
           style={{
-            borderRadius: "10%",
-            clipPath:
-              "polygon(50% 0, 100% 20%, 100% 80%, 50% 100%, 0 80%, 0 20%)",
-            boxShadow:
-              "0 4px 15px rgba(255, 225, 204, 0.7), 0 4px 15px rgba(254, 197, 157, 0.5), 0 4px 15px rgba(255, 139, 61, 0.3)",
+            borderRadius: "50%",
             filter: "brightness(0.9) contrast(1.1)",
           }}
           objectFit="cover"
