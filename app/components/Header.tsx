@@ -13,7 +13,9 @@ const Header = () => {
           <h1 className=" font-bold text-6xl">Farouk Mustapha</h1>
         </div>
         <div className="relative">
-          <p className=" ml-12">Front-end Developer</p>
+          <p className=" ml-12 py-1 px-2 bg-secondary-color font-semibold w-max rounded-md">
+            Front-end Developer
+          </p>
           <p className="mt-2">
             I'm a Front-end Developer based in Lagos, Nigeria. I specialize in
             building responsive and accessible websites and web applications.
@@ -24,21 +26,34 @@ const Header = () => {
         className="relative flex justify-center items-center w-[50%] h-full bg-right bg-contain bg-no-repeat "
         style={{ backgroundImage: "url('/svgs/profile-bg.svg')" }}
       >
-        <Image
-          alt="profile image"
-          src={"/images/profile-7.jpg"}
-          style={{
-            borderRadius: "50%",
-            filter: "brightness(0.9) contrast(1.1)",
-          }}
-          objectFit="cover"
-          height={"150"}
-          width={"300"}
-        />
+        <div className="relative h-[20rem] w-[20rem]">
+          <Image
+            alt="profile image"
+            src={"/images/profile.jpg"}
+            style={{
+              borderRadius: "50%",
+              filter: "brightness(0.9) contrast(1.1)",
+              height: "100%",
+              width: "100%",
+            }}
+            objectFit="cover"
+            layout="fill"
+          />
+          <div
+            className="absolute top-0 left-0 w-full h-full rounded-full"
+            style={{
+              backgroundColor: "#4d1f00",
+              mixBlendMode: "multiply",
+              backgroundBlendMode: "screen",
+              opacity: 0.5,
+              zIndex: 20,
+            }}
+          />
+        </div>
 
         <Link
           href="#message"
-          className="p-4 bg-white absolute left-[48%] bottom-[12%] rounded-[50%]"
+          className="p-4 bg-white absolute left-[48%] bottom-[5%] rounded-[50%] z-20"
         >
           <Image
             alt="message"
