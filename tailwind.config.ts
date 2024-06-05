@@ -16,10 +16,15 @@ const config: Config = {
       colors: {
         "primary-color": "#4d1f00",
         "secondary-color": "#ffe1cc",
-        "secondary-color-2": "#fec59d",
+        "secondary-color-2": "#F2CA99",
         "secondary-color-3": "#ff8b3d",
         "tertiary-color": "#b3e0ff",
         "tertiary-color-2": "#002e4d",
+      },
+      fontFamily: {
+        inter: ["Inter", "sans-serif"],
+        poppins: ["Poppins", "sans-serif"],
+        Rubik: ["Rubik Mono One", "monospace"],
       },
     },
   },

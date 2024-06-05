@@ -4,23 +4,32 @@ import Link from "next/link";
 const Header = () => {
   return (
     <header
-      className="flex flex-row justify-between items-center h-[28rem] px-40 py-4 mt-10 bg-center bg-cover"
+      className="flex flex-row justify-between items-center pt-10 pb-24 px-40 py-12 mt-10 bg-center bg-cover border-b-2 border-b-secondary-color-2 "
       style={{ backgroundImage: "url('/patterns/pattern-4.svg')" }}
     >
       <section className="w-[50%] relative pb-10   flex flex-col gap-4 ">
         <div className="flex flex-col gap-2">
           <h5 className=" font-medium text-lg">Hi, I'm</h5>
-          <h1 className=" font-bold text-6xl">Farouk Mustapha</h1>
+          <h1 className=" font-poppins  font-semibold text-6xl tracking-widest">
+            Farouk.
+          </h1>
         </div>
         <div className="relative">
-          <p className=" ml-12 py-1 px-2 bg-secondary-color font-semibold w-max rounded-md">
-            Front-end Developer
+          <p className="  ml-12 py-1 px-2 bg-secondary-color-2 font-semibold w-max rounded-md">
+            A Front-end Developer
           </p>
           <p className="mt-2">
-            I'm a Front-end Developer based in Lagos, Nigeria. I specialize in
-            building responsive and accessible websites and web applications.
+            I love turning designs and ideas into cool web experiences and work
+            closely with designers and backend developers to bring these ideas
+            to life.
           </p>
         </div>
+        <Link
+          href={"/"}
+          className="px-5 py-2 bg-secondary-color font-semibold border-2 border-secondary-color-2  rounded-3xl w-max  mt-8 hover:scale-105  transition-all"
+        >
+          View Resume
+        </Link>
       </section>
       <section
         className="relative flex justify-center items-center w-[50%] h-full bg-right bg-contain bg-no-repeat "
@@ -53,13 +62,13 @@ const Header = () => {
 
         <Link
           href="#message"
-          className="p-4 bg-white absolute left-[48%] bottom-[5%] rounded-[50%] z-20"
+          className="p-2 bg-white absolute left-[48%] bottom-[-7%] rounded-[50%] z-20 hover:bg-secondary-color-2 hover:text-white transition-all hover:fill-white"
         >
           <Image
             alt="message"
             src={"/svgs/message-programming.svg"}
-            width={20}
-            height={20}
+            width={25}
+            height={25}
           />
         </Link>
       </section>
