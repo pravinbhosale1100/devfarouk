@@ -4,7 +4,7 @@ import Link from "next/link";
 const Header = () => {
   return (
     <header
-      className="flex flex-row justify-between items-center pt-10 pb-24 px-40 py-12 mt-10 bg-center bg-cover border-b-2 border-b-secondary-color-2 "
+      className="flex flex-row justify-between items-center pt-10 pb-24 px-40 py-12 mt-10 bg-center "
       style={{ backgroundImage: "url('/patterns/pattern-4.svg')" }}
     >
       <section className="w-[50%] relative pb-10   flex flex-col gap-4 ">
@@ -19,9 +19,9 @@ const Header = () => {
             A Front-end Developer
           </p>
           <p className="mt-2">
-            I love turning designs and ideas into cool web experiences and work
-            closely with designers and backend developers to bring these ideas
-            to life.
+            I love turning designs and ideas into cool web experiences, and work
+            closely with Product designers and backend developers to bring these
+            ideas to life.
           </p>
         </div>
         <Link
