@@ -1,5 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
+import { FaDownload, FaFileAlt } from "react-icons/fa";
+import { HiDocumentText } from "react-icons/hi";
 
 const Header = () => {
   return (
@@ -26,37 +28,27 @@ const Header = () => {
         </div>
         <Link
           href={"/"}
-          className="px-5 py-2 bg-secondary-color font-semibold border-2 border-secondary-color-2  rounded-3xl w-max  mt-8 hover:scale-105  transition-all"
+          className="flex items-center justify-center gap-3 px-5 py-2  font-semibold w-max  mt-8 hover:scale-105  transition-all border-b-[1px] hover:border-b-2 border-b-black"
         >
           View Resume
+          <HiDocumentText size={25} />
         </Link>
       </section>
       <section
         className="relative flex justify-center items-center w-[50%] h-full bg-right bg-contain bg-no-repeat "
         style={{ backgroundImage: "url('/svgs/profile-bg.svg')" }}
       >
-        <div className="relative h-[20rem] w-[20rem]">
+        <div className="relative h-[20rem] w-[20rem] grayscale">
           <Image
             alt="profile image"
             src={"/images/profile.jpg"}
             style={{
               borderRadius: "50%",
-              filter: "brightness(0.9) contrast(1.1)",
               height: "100%",
               width: "100%",
             }}
             objectFit="cover"
             layout="fill"
-          />
-          <div
-            className="absolute top-0 left-0 w-full h-full rounded-full"
-            style={{
-              backgroundColor: "#4d1f00",
-              mixBlendMode: "multiply",
-              backgroundBlendMode: "screen",
-              opacity: 0.5,
-              zIndex: 20,
-            }}
           />
         </div>
 

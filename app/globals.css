@@ -6,16 +6,16 @@
 @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Rubik+Mono+One&display=swap");
 
 :root {
-  --foreground-hex: #4d1f00;
+  --foreground-hex: black;
   --background-start-hex: #ffe1cc;
-  --background-end-hex: #fec59d;
+  --background-end-hex: #fad9b1;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
     --foreground-hex: black;
-    --background-start-hex: #ffe1cc;
-    --background-end-hex: #fad9b1;
+    --background-start-hex: #f8f9fa;
+    --background-end-hex: #f8f9fa;
   }
 }
 
@@ -35,6 +35,7 @@ body {
     var(--background-end-hex) 50%
   );
 }
+
 @layer utilities {
   .text-balance {
     text-wrap: balance;
