@@ -37,28 +37,17 @@ const Header = () => {
         className="relative flex justify-center items-center w-[50%] h-full bg-right bg-contain bg-no-repeat "
         style={{ backgroundImage: "url('/svgs/profile-bg.svg')" }}
       >
-        <div className="relative h-[20rem] w-[20rem]">
+        <div className="relative h-[20rem] w-[20rem] grayscale">
           <Image
             alt="profile image"
             src={"/images/profile.jpg"}
             style={{
               borderRadius: "50%",
-              filter: "brightness(0.9) contrast(1.1)",
               height: "100%",
               width: "100%",
             }}
             objectFit="cover"
             layout="fill"
-          />
-          <div
-            className="absolute top-0 left-0 w-full h-full rounded-full"
-            style={{
-              backgroundColor: "#4d1f00",
-              mixBlendMode: "multiply",
-              backgroundBlendMode: "screen",
-              opacity: 0.5,
-              zIndex: 20,
-            }}
           />
         </div>
 

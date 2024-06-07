@@ -1,13 +1,15 @@
+import Image from "next/image";
+
 const About = () => {
   return (
     <section className="flex flex-col px-40 py-12">
       <div className="flex flex-row gap-4 justify-center items-center font-semibold">
-        <div className=" w-36  border-b-2 border-b-secondary-color-2"></div>
+        <div className=" w-36  border-b-[1px] border-b-black"></div>
         <h3 className=" text-xl">01. About Me</h3>
-        <div className=" w-36  border-b-2 border-b-secondary-color-2"></div>
+        <div className=" w-36  border-b-[1px] border-b-black"></div>
       </div>
       <div className="flex flex-row w-full py-10 ">
-        <div className="w-[50%] flex flex-col gap-2 ">
+        <div className="w-[50%] flex flex-col gap-6 ">
           <h4 className="font-semibold">Technologies i work with</h4>
           <ul>
             <li className=" grayscale hover:grayscale-0 flex items-center cursor-pointer gap-5">
