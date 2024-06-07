@@ -10,8 +10,42 @@ const About = () => {
         <div className="w-[50%] flex flex-col gap-2 ">
           <h4 className="font-semibold">Technologies i work with</h4>
           <ul>
-            <li></li>
-            <li></li> <li></li> <li></li> <li></li> <li></li>
+            <li className=" grayscale hover:grayscale-0 flex items-center cursor-pointer gap-5">
+              <img
+                src="https://cdn.simpleicons.org/nextdotjs"
+                alt="Nextjs"
+                height={50}
+                width={50}
+              />
+              <span>NextJs</span>
+            </li>
+            <li className=" grayscale hover:grayscale-0 flex items-center gap-5 cursor-pointer">
+              <img
+                src="https://cdn.simpleicons.org/react"
+                alt="Nextjs"
+                height={50}
+                width={50}
+              />
+              <span>React</span>
+            </li>
+            <li className=" grayscale hover:grayscale-0 flex items-center gap-5 cursor-pointer">
+              <img
+                src="https://cdn.simpleicons.org/tailwindcss"
+                alt="Nextjs"
+                height={50}
+                width={50}
+              />
+              <span>TailwindCss</span>
+            </li>{" "}
+            <li className=" grayscale hover:grayscale-0 flex items-center gap-5 cursor-pointer">
+              <img
+                src="https://cdn.simpleicons.org/framer"
+                alt="Nextjs"
+                height={50}
+                width={50}
+              />
+              <span>Framer Motion</span>
+            </li>
           </ul>
         </div>
         <div className="w-[50%]">

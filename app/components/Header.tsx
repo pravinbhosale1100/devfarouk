@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import { HiDocumentText } from "react-icons/hi";
 
 const Header = () => {
   return (
@@ -26,9 +27,10 @@ const Header = () => {
         </div>
         <Link
           href={"/"}
-          className="px-5 py-2 bg-secondary-color font-semibold border-2 border-secondary-color-2  rounded-3xl w-max  mt-8 hover:scale-105  transition-all"
+          className="flex items-center justify-center gap-3 px-5 py-2  font-semibold w-max  mt-8 hover:scale-105  transition-all border-b-[1px] hover:border-b-2 border-b-black"
         >
           View Resume
+          <HiDocumentText size={25} />
         </Link>
       </section>
       <section
