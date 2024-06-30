@@ -37,8 +37,3 @@ body {
   background: var(--background-end-hex);
   /* color: #f6efeb; */
 }
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
-}

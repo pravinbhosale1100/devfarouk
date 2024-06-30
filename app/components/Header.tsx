@@ -8,14 +8,20 @@ const Header = () => {
       <section className="w-[50%] relative pb-10   flex flex-col gap-4 ">
         <div className="flex flex-col gap-2">
           <h5 className=" font-medium text-lg">Hi, I'm</h5>
-          <h1 className=" font-poppins  font-semibold text-6xl tracking-widest">
-            Farouk.
+          <h1 className=" font-poppins  font-semibold text-6xl">
+            Farouk Mustapha
           </h1>
         </div>
         <div className="relative">
-          <p className="  ml-12 py-1 px-2 bg-secondary-color-2 font-semibold w-max rounded-md">
+          <p className=" py-1 px-2 bg-secondary-color-3 text-white font-semibold w-max rounded-md">
             A Front-end Developer
           </p>
+          <h5 className="text-black text-3xl font-bold mt-4">
+            I <span className=" text-secondary-color-3 ">D</span>
+            <span className="text-black">esign</span> &{" "}
+            <span className=" text-secondary-color-3 ">D</span>
+            <span className="text-black">evelop</span> WebApps
+          </h5>
           <p className="mt-2">
             I love turning designs and ideas into cool web experiences, and work
             closely with Product designers and backend developers to bring these
@@ -24,7 +30,7 @@ const Header = () => {
         </div>
         <Link
           href={"/"}
-          className="flex items-center justify-center gap-3 px-5 py-2  font-semibold w-max  mt-8 hover:scale-105  transition-all border-b-[1px] hover:border-b-2 border-b-black"
+          className="flex items-center justify-center gap-3 px-5 py-2  font-semibold w-max  mt-5  transition-all border-[1px] hover:border-2 border-black rounded-3xl"
         >
           View Resume
           <HiDocumentText size={25} />
