@@ -40,10 +40,10 @@ const Header = () => {
         className="relative flex justify-center items-center w-[50%] h-full bg-right bg-contain bg-no-repeat "
         style={{ backgroundImage: "url('/svgs/profile-bg.svg')" }}
       >
-        <div className="relative h-[20rem] w-[20rem] grayscale">
+        <div className="relative h-[20rem] w-[20rem] ">
           <Image
             alt="profile image"
-            src={"/images/profile.jpg"}
+            src={"/images/devfarouk.png"}
             style={{
               borderRadius: "50%",
               height: "100%",
