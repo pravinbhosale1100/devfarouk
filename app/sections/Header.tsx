@@ -7,21 +7,19 @@ const Header = () => {
     <header className="flex flex-row justify-between items-center pt-10 pb-24 px-40 py-12 mt-10 bg-center ">
       <section className="w-[50%] relative pb-10   flex flex-col gap-4 ">
         <div className="flex flex-col gap-2">
-          <h5 className=" font-medium text-lg">Hi, I'm</h5>
-          <h1 className=" font-poppins  font-semibold text-6xl">
-            Farouk Mustapha
-          </h1>
+          <span className=" font-medium text-lg">Hi, I'm</span>
+          <h1 className=" font-semibold text-6xl">Farouk Mustapha</h1>
         </div>
         <div className="relative">
-          <p className=" py-1 px-2 bg-secondary-color-3 text-white font-semibold w-max rounded-md">
+          <h2 className=" py-1 px-2 bg-secondary-color-3 text-white font-semibold w-max rounded-md text-2xl">
             A Front-end Developer
-          </p>
-          <h5 className="text-black text-3xl font-bold mt-4">
+          </h2>
+          <h2 className="text-black text-3xl font-bold mt-4">
             I <span className=" text-secondary-color-3 ">D</span>
             <span className="text-black">esign</span> &{" "}
             <span className=" text-secondary-color-3 ">D</span>
             <span className="text-black">evelop</span> WebApps
-          </h5>
+          </h2>
           <p className="mt-2">
             I love turning designs and ideas into cool web experiences, and work
             closely with Product designers and backend developers to bring these
@@ -40,7 +38,7 @@ const Header = () => {
         className="relative flex justify-center items-center w-[50%] h-full bg-right bg-contain bg-no-repeat "
         style={{ backgroundImage: "url('/svgs/profile-bg.svg')" }}
       >
-        <div className="relative h-[20rem] w-[20rem] ">
+        <div className="relative h-[20rem] w-[20rem]">
           <Image
             alt="profile image"
             src={"/images/devfarouk.png"}
