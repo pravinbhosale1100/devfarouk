@@ -42,11 +42,6 @@ body {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  /* background: radial-gradient(
-    circle,
-    var(--background-start-hex) 0%,
-    var(--background-end-hex) 50%
-  ); */
   background: var(--background-end-hex);
   /* color: #f6efeb; */
 }

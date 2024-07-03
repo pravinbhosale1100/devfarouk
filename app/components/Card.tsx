@@ -1,4 +1,4 @@
-import Image from "next/image";
+import { FaArrowUpRightFromSquare } from "react-icons/fa6";
 import Link from "next/link";
 interface CardProps {
   id: number;
@@ -27,22 +27,39 @@ const Card = ({
           <img
             src={image}
             alt={`${name} Image`}
-            className=" object-cover grayscale w-full h-[370px] object-left rounded-lg shadow-lg"
+            className=" object-cover grayscale hover:grayscale-0 transition-all w-full h-[370px] object-left rounded-lg shadow-lg"
           />
         </Link>
       </div>
 
-      <div className={` w-[60%] relative  ${isEven ? "order-2" : "order-1 "}`}>
-        <h6 className="text-lg font-semibold ">{type}</h6>
+      <div
+        className={` w-[60%] relative  ${
+          isEven ? "order-2 text-right" : "order-1 text-left"
+        }`}
+      >
+        <h6 className="text-lg text-secondary-color-3 font-bold">{type}</h6>
         <h1 className=" text-xl mt-2 ">{name}</h1>
-        <div className="px-5 py-7 bg-[#FBEDDD] -ml-16 mt-2 rounded-md">
+        <div
+          className={`px-5 py-7 bg-[#FBEDDD] ${
+            isEven ? "-ml-16" : "-mr-16"
+          }  mt-2 rounded-md z-10 relative`}
+        >
           {description}
         </div>
-        <div className=" text-left mt-2 ">
+        <div className="text-left mt-2 px-2 flex gap-2 text-secondary-color-3 font-bold">
           {stacks.map((stack) => (
             <span>{stack}</span>
           ))}
         </div>
+        <Link
+          href={link}
+          className={`mt-2 flex ${isEven ? " justify-end" : " justify-start"}`}
+        >
+          <FaArrowUpRightFromSquare
+            size={25}
+            className="text-secondary-color-3 "
+          />
+        </Link>
       </div>
     </section>
   );

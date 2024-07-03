@@ -4,14 +4,14 @@ import { HiDocumentText } from "react-icons/hi";
 
 const Header = () => {
   return (
-    <header className="flex flex-row justify-between items-center pt-10 pb-24 px-40 py-12 mt-10 bg-center ">
+    <header className="flex flex-row justify-between mt-24 items-center pb-24  py-24  bg-center mx-[10%] ">
       <section className="w-[50%] relative pb-10   flex flex-col gap-4 ">
         <div className="flex flex-col gap-2">
           <span className=" font-medium text-lg">Hi, I'm</span>
           <h1 className=" font-semibold text-6xl">Farouk Mustapha</h1>
         </div>
         <div className="relative">
-          <h2 className=" py-1 px-2 bg-secondary-color-3 text-white font-semibold w-max rounded-md text-2xl">
+          <h2 className=" py-1 px-2 bg-[#FBEDDD] text-black font-semibold w-max rounded-md text-xl">
             A Front-end Developer
           </h2>
           <h2 className="text-black text-3xl font-bold mt-4">
@@ -26,22 +26,37 @@ const Header = () => {
             ideas to life.
           </p>
         </div>
-        <Link
-          href={"/"}
-          className="flex items-center justify-center gap-3 px-5 py-2  font-semibold w-max  mt-5  transition-all border-[1px] hover:border-2 border-black rounded-3xl"
-        >
-          View Resume
-          <HiDocumentText size={25} />
-        </Link>
+        <div className="flex gap-2">
+          <Link
+            href={"https://cdn.simpleicons.org/gmail"}
+            className="flex items-center justify-center gap-3 px-5 py-2  font-semibold w-max  mt-5   border-[1px] hover:bg-[#FBEDDD] hover:border-secondary-color transition-all border-black rounded-lg"
+          >
+            Get in Touch
+            <Image
+              alt="message"
+              src={"/svgs/message-programming.svg"}
+              width={25}
+              height={25}
+            />{" "}
+          </Link>
+
+          <Link
+            href={"/"}
+            className="flex items-center justify-center gap-3 px-5 py-2  font-semibold w-max border-b border-b-transparent mt-5  transition-all hover:border-b-black hover:border-b "
+          >
+            View Resume
+            <HiDocumentText size={25} />
+          </Link>
+        </div>
       </section>
       <section
-        className="relative flex justify-center items-center w-[50%] h-full bg-right bg-contain bg-no-repeat "
+        className="relative flex justify-end items-center w-[50%] h-[25rem] bg-right bg-contain bg-no-repeat"
         style={{ backgroundImage: "url('/svgs/profile-bg.svg')" }}
       >
-        <div className="relative h-[20rem] w-[20rem]">
+        <div className="relative h-[17rem] w-[17rem]">
           <Image
             alt="profile image"
-            src={"/images/devfarouk.png"}
+            src={"/images/profile.jpg"}
             style={{
               borderRadius: "50%",
               height: "100%",
@@ -51,18 +66,6 @@ const Header = () => {
             layout="fill"
           />
         </div>
-
-        <Link
-          href="#message"
-          className="p-2 bg-white absolute left-[48%] bottom-[-7%] rounded-[50%] z-20 hover:bg-secondary-color-2 hover:text-white transition-all hover:fill-white"
-        >
-          <Image
-            alt="message"
-            src={"/svgs/message-programming.svg"}
-            width={25}
-            height={25}
-          />
-        </Link>
       </section>
     </header>
   );

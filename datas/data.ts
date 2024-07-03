@@ -10,20 +10,15 @@ export const socialLinks = [
     simpleIcon: "https://cdn.simpleicons.org/linkedin",
   },
   {
-    name: "Github",
-    link: "https://github.com/Farouk-ayo",
-    simpleIcon: "https://cdn.simpleicons.org/github",
-  },
-  {
     name: "X",
     link: "https://x.com/Faroukayo24",
     simpleIcon: "https://cdn.simpleicons.org/x",
   },
 
   {
-    name: "mail",
+    name: "Gmail",
     link: "mailto:your.mustaphafarouk41@gmail.com",
-    simpleIcon: "https://cdn.simpleicons.org/mail",
+    simpleIcon: "https://cdn.simpleicons.org/gmail",
   },
 ];
 
@@ -57,7 +52,7 @@ export const technologies = [
     iconLink: "https://cdn.simpleicons.org/chakraui",
   },
   {
-    name: "shadcnui",
+    name: "Shadcn/ui",
     iconLink: "https://cdn.simpleicons.org/shadcnui",
   },
 ];
@@ -136,7 +131,7 @@ export const companiesInfo = [
 export const projects = [
   {
     name: "BerryStamp",
-    type: "Featured Projects",
+    type: "Featured Project",
     description:
       "Berrystamp is revolutionizing the print-on-demand industry with its innovative approach to customization and printing services.",
     image: "/images/Berrystamp.png",
@@ -144,22 +139,58 @@ export const projects = [
     stacks: ["JavaScript", "TypeScript", "React", "TailwindCss"],
   },
   {
-    name: "BerryStamp",
-    type: "Featured Projects",
+    name: "GoSwift",
+    type: "Featured Project",
     description:
-      "Berrystamp is revolutionizing the print-on-demand industry with its innovative approach to customization and printing services. At Berrystamp, customers can browse and customize stunning designs across a wide range of products nationwide. Whether you're looking for apparel, accessories, or other personalized items, Berrystamp offers a seamless experience from design selection to delivery",
+      "A Gwift web app is a progressive ridesharing application with real-time tracking, seamless geocoordinate integration, and a user-friendly interface, prioritizing smooth navigation and efficient API consumption.",
     image: "/images/Gswift.png",
-    link: "https://berrystamp.com/",
+    link: "https://gswift.pathpalz.com/",
     stacks: ["JavaScript", "TypeScript", "React", "TailwindCss"],
   },
   {
-    name: "BerryStamp",
-    type: "Featured Projects",
+    name: "Huntstore",
+    type: "Personal Project",
     description:
-      "Berrystamp is revolutionizing the print-on-demand industry with its innovative approach to customization and printing services. At Berrystamp, customers can browse and customize stunning designs across a wide range of products nationwide. Whether you're looking for apparel, accessories, or other personalized items, Berrystamp offers a seamless experience from design selection to delivery",
-    image: "/images/Frk_ayo.png",
-    link: "https://berrystamp.com/",
-    stacks: ["JavaScript", "TypeScript", "React", "TailwindCss"],
+      "Huntstore is an ecommerce store that shows a variety of gender products.",
+    image: "/images/huntstore.png",
+    link: "https://huntstore.vercel.app/",
+    stacks: ["JavaScript", "React", "css"],
+  },
+  {
+    name: "Huntstore",
+    type: "Personal Project",
+    description:
+      "Huntstore is an ecommerce store that shows a variety of gender products.",
+    image: "/images/huntstore.png",
+    link: "https://huntstore.vercel.app/",
+    stacks: ["JavaScript", "React", "css"],
+  },
+  {
+    name: "Huntstore",
+    type: "Personal Project",
+    description:
+      "Huntstore is an ecommerce store that shows a variety of gender products.",
+    image: "/images/huntstore.png",
+    link: "https://huntstore.vercel.app/",
+    stacks: ["JavaScript", "React", "css"],
+  },
+  {
+    name: "Huntstore",
+    type: "Personal Project",
+    description:
+      "Huntstore is an ecommerce store that shows a variety of gender products.",
+    image: "/images/huntstore.png",
+    link: "https://huntstore.vercel.app/",
+    stacks: ["JavaScript", "React", "css"],
+  },
+  {
+    name: "Huntstore",
+    type: "Personal Project",
+    description:
+      "Huntstore is an ecommerce store that shows a variety of gender products.",
+    image: "/images/huntstore.png",
+    link: "https://huntstore.vercel.app/",
+    stacks: ["JavaScript", "React", "css"],
   },
 
   ,

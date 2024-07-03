@@ -1,14 +1,15 @@
 import { technologies } from "@/datas/data";
+import Image from "next/image";
 
 const About = () => {
   return (
-    <section className="flex flex-col px-40 py-12">
+    <section className="flex flex-col px-40 ">
       <div className="flex flex-row gap-4 justify-end items-center font-semibold">
         <span className=" text-2xl">01. About Me</span>
         <div className=" w-36 border-b-[1px] border-b-border-color"></div>
       </div>
       <div className="flex flex-row w-full py-10  gap-10">
-        <div className="w-[50%] flex flex-col gap-2 ">
+        <div className="w-[50%] flex flex-col gap-2">
           <h4 className="font-semibold">Technologies i work with</h4>
           <div style={{ backgroundImage: "url('/patterns/pattern-4.svg')" }}>
             <ul className="px-8 py-8 flex flex-col gap-2 h-72  flex-wrap w-full">
@@ -33,13 +34,10 @@ const About = () => {
             applications using JavaScript and TypeScript. Over this period, I
             have worked and interned at startups and companies such as Pathpalz,
             Berrystamp, and JustDoStartUp. <br />
-            <br />
-            I have contributed to numerous projects, collaborating with product
-            designers, backend developers, DevOps, and other tech professionals.
-            I have a strong passion for learning and teaching, and am always
-            updated with the latest advancements in technology.
-            <br /> <br />I take my work seriously, but that doesn't mean I can't
-            enjoy a bit of fun along the way. I enjoy watching Anime.
+            <br />I have contributed to numerous projects, collaborating with
+            product designers, backend developers, DevOps, and other tech
+            professionals. I have a strong passion for learning and teaching,
+            and am always updated with the latest advancements in technology.
           </article>
         </div>
       </div>
@@ -47,3 +45,24 @@ const About = () => {
   );
 };
 export default About;
+
+{
+  /* <div className="w-[50%] flex flex-col gap-2 ">
+<h4 className="font-semibold">Technologies i work with</h4>
+<div style={{ backgroundImage: "url('/patterns/pattern-4.svg')" }}>
+  <ul className="px-8 py-8 flex flex-col gap-2 h-72  flex-wrap w-full">
+    {technologies.map((tech) => (
+      <li className=" grayscale hover:grayscale-0 flex items-center cursor-pointer gap-5">
+        <img
+          src={tech.iconLink}
+          alt={tech.name}
+          height={50}
+          width={50}
+        />
+        <span>{tech.name}</span>
+      </li>
+    ))}
+  </ul>
+</div>
+</div> */
+}
