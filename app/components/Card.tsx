@@ -40,7 +40,7 @@ const Card = ({
         <h6 className="text-lg text-secondary-color-3 font-bold">{type}</h6>
         <h1 className=" text-2xl mt-2 font-semibold ">{name}</h1>
         <div
-          className={`px-5 py-7 bg-[#fffbf5] ${
+          className={`px-5 py-7 bg-[#FBEDDD] ${
             isEven ? "-ml-16" : "-mr-16"
           }  mt-2 rounded-md z-10 relative`}
         >

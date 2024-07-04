@@ -23,7 +23,7 @@ const Navbar = () => {
               {" "}
               <Link
                 href={"/"}
-                className="flex items-center justify-center gap-3 px-5 py-2  font-semibold w-max     border-[1px] hover:bg-[#ffe1cc] transition-all border-black rounded-lg "
+                className="flex items-center justify-center gap-3 px-5 py-2  font-semibold w-max     border-[1px] hover:bg-[#FBEDDD] transition-all border-black rounded-lg "
               >
                 View Resume
                 <HiDocumentText size={25} />

@@ -4,6 +4,7 @@ import About from "./sections/About";
 import Works from "./sections/Works";
 import Experience from "./sections/Experience";
 import Contact from "./sections/Contact";
+import Copyright from "./sections/Copyright";
 
 export default function Home() {
   return (
@@ -13,6 +14,7 @@ export default function Home() {
       <Experience />
       <Works />
       <Contact />
+      <Copyright />
     </main>
   );
 }

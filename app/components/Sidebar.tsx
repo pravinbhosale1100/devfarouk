@@ -4,7 +4,6 @@ import Link from "next/link";
 const Sidebar = () => {
   return (
     <section className="fixed top-0  left-0 w-[10%] h-full">
-      {" "}
       <ul className="flex flex-col justify-center items-center gap-10 h-full">
         {socialLinks.map((socialLink, id) => (
           <li
@@ -13,11 +12,7 @@ const Sidebar = () => {
           >
             <Link href={socialLink.link}>
               <img
-                src={
-                  socialLink.name === "Figma"
-                    ? "/svgs/figma.svg"
-                    : socialLink.simpleIcon
-                }
+                src={socialLink.simpleIcon}
                 alt={socialLink.name}
                 height={20}
                 width={20}
