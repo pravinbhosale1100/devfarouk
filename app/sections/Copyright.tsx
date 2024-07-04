@@ -1,6 +1,6 @@
 const Copyright = () => {
   return (
-    <div className="  py-6  flex flex-col justify-center items-center font-medium text-lg">
+    <div className="  py-6  flex flex-col justify-center items-center font-medium text-lg shadow-inner">
       <p className=" ">
         Designed by
         <span className=" text-secondary-color-3  font-bold">

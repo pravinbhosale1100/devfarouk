@@ -3,7 +3,7 @@ import Link from "next/link";
 
 const Contact = () => {
   return (
-    <section className=" text-center w-[100%] m-auto py-12 pb-28 shadow-sm px-0 mx-0">
+    <section className=" text-center w-[85%] m-auto py-12 pb-32  p">
       <div className="flex flex-col gap-2 justify-center items-center w-[85%] m-auto">
         <h2 className=" text-3xl text-secondary-color-3 font-bold italic">
           What next? Let's talk!
