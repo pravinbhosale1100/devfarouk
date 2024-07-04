@@ -28,8 +28,8 @@
   :root {
     --foreground-hex: black;
     --background-start-hex: #ffe1cc;
-    /* --background-end-hex: #fffbf5; */
-    --background-end-hex: "#fff";
+    --background-end-hex: #fffbf5;
+    /* --background-end-hex: "#fff"; */
   }
 }
 

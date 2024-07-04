@@ -28,7 +28,7 @@ const Header = () => {
         </div>
         <Link
           href={"https://cdn.simpleicons.org/gmail"}
-          className="flex items-center justify-center gap-3 px-5 py-2  font-semibold w-max  mt-5   border-[1px] hover:bg-[#fffbf5] hover:border-secondary-color transition-all border-black rounded-lg"
+          className="flex items-center justify-center gap-3 px-5 py-2  font-semibold w-max  mt-5   border-[1px] hover:bg-[#ffe1cc]  transition-all border-black rounded-lg"
         >
           Get in Touch
           <Image

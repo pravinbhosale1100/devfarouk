@@ -4,7 +4,7 @@ import { HiDocumentText } from "react-icons/hi";
 
 const Navbar = () => {
   return (
-    <section className="fixed top-0 h-24 flex flex-row items-center w-full shadow-sm justify-between  px-16 z-20 bg-[#fff]">
+    <section className="fixed top-0 h-24 flex flex-row items-center w-full shadow-sm justify-between  px-16 z-20 bg-[#fffbf5]">
       <div className="flex justify-center items-center">
         <h1 className=" font-bold text-3xl">Dev</h1>
         <p className=" text-3xl">Farouk</p>
@@ -23,7 +23,7 @@ const Navbar = () => {
               {" "}
               <Link
                 href={"/"}
-                className="flex items-center justify-center gap-3 px-5 py-2  font-semibold w-max     border-[1px] hover:bg-[#fffbf5] hover:border-secondary-color transition-all border-black rounded-lg "
+                className="flex items-center justify-center gap-3 px-5 py-2  font-semibold w-max     border-[1px] hover:bg-[#ffe1cc] transition-all border-black rounded-lg "
               >
                 View Resume
                 <HiDocumentText size={25} />
