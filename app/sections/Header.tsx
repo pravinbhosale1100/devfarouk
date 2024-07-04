@@ -11,7 +11,7 @@ const Header = () => {
           <h1 className=" font-semibold text-6xl">Farouk Mustapha</h1>
         </div>
         <div className="relative">
-          <h2 className=" py-1 px-2 bg-[#FBEDDD] text-black font-semibold w-max rounded-md text-xl">
+          <h2 className=" py-1 px-2 bg-secondary-color-3 text-white font-semibold w-max rounded-md text-xl">
             A Front-end Developer
           </h2>
           <h2 className="text-black text-3xl font-bold mt-4">
@@ -26,28 +26,18 @@ const Header = () => {
             ideas to life.
           </p>
         </div>
-        <div className="flex gap-2">
-          <Link
-            href={"https://cdn.simpleicons.org/gmail"}
-            className="flex items-center justify-center gap-3 px-5 py-2  font-semibold w-max  mt-5   border-[1px] hover:bg-[#FBEDDD] hover:border-secondary-color transition-all border-black rounded-lg"
-          >
-            Get in Touch
-            <Image
-              alt="message"
-              src={"/svgs/message-programming.svg"}
-              width={25}
-              height={25}
-            />{" "}
-          </Link>
-
-          <Link
-            href={"/"}
-            className="flex items-center justify-center gap-3 px-5 py-2  font-semibold w-max border-b border-b-transparent mt-5  transition-all hover:border-b-black hover:border-b "
-          >
-            View Resume
-            <HiDocumentText size={25} />
-          </Link>
-        </div>
+        <Link
+          href={"https://cdn.simpleicons.org/gmail"}
+          className="flex items-center justify-center gap-3 px-5 py-2  font-semibold w-max  mt-5   border-[1px] hover:bg-[#fffbf5] hover:border-secondary-color transition-all border-black rounded-lg"
+        >
+          Get in Touch
+          <Image
+            alt="message"
+            src={"/svgs/message-programming.svg"}
+            width={25}
+            height={25}
+          />{" "}
+        </Link>
       </section>
       <section
         className="relative flex justify-end items-center w-[50%] h-[25rem] bg-right bg-contain bg-no-repeat"

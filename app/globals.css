@@ -28,7 +28,8 @@
   :root {
     --foreground-hex: black;
     --background-start-hex: #ffe1cc;
-    --background-end-hex: #fffbf5;
+    /* --background-end-hex: #fffbf5; */
+    --background-end-hex: "#fff";
   }
 }
 
@@ -44,4 +45,5 @@ body {
   box-sizing: border-box;
   background: var(--background-end-hex);
   /* color: #f6efeb; */
+  /* color: #4444440d; */
 }

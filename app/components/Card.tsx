@@ -21,7 +21,7 @@ const Card = ({
 }: CardProps) => {
   const isEven = id % 2 === 0;
   return (
-    <section className={`flex flex-row w-full  items-center `}>
+    <section className={`flex flex-row w-full  items-center px-12`}>
       <div className={` w-[60%] ${isEven ? "order-1" : "order-2"}`}>
         <Link href={link} className="w-full">
           <img
@@ -33,14 +33,14 @@ const Card = ({
       </div>
 
       <div
-        className={` w-[60%] relative  ${
+        className={` w-[40%] relative  ${
           isEven ? "order-2 text-right" : "order-1 text-left"
         }`}
       >
         <h6 className="text-lg text-secondary-color-3 font-bold">{type}</h6>
-        <h1 className=" text-xl mt-2 ">{name}</h1>
+        <h1 className=" text-2xl mt-2 font-semibold ">{name}</h1>
         <div
-          className={`px-5 py-7 bg-[#FBEDDD] ${
+          className={`px-5 py-7 bg-[#fffbf5] ${
             isEven ? "-ml-16" : "-mr-16"
           }  mt-2 rounded-md z-10 relative`}
         >
@@ -56,7 +56,7 @@ const Card = ({
           className={`mt-2 flex ${isEven ? " justify-end" : " justify-start"}`}
         >
           <FaArrowUpRightFromSquare
-            size={25}
+            size={20}
             className="text-secondary-color-3 "
           />
         </Link>
