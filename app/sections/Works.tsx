@@ -31,16 +31,18 @@ const Works = () => {
                 />
               )
           )}
-        <Link
-          href={"/works"}
-          className="flex justify-center items-center text-black font-bold"
-        >
-          <span className="">View All Projects</span>
+        <div className="flex justify-center items-center">
+          <Link
+            href={"/works"}
+            className=" flex text-black font-bold border-b border-transparent hover:border-black transition-all "
+          >
+            <span className="">View All Projects</span>
 
-          <span>
-            <IoArrowForward size={20} className=" text-secondary-color-3" />
-          </span>
-        </Link>
+            <span>
+              <IoArrowForward size={20} className=" text-secondary-color-3" />
+            </span>
+          </Link>
+        </div>
       </div>
     </section>
   );
