@@ -1,4 +1,3 @@
-import Image from "next/image";
 import Header from "./sections/Header";
 import About from "./sections/About";
 import Works from "./sections/Works";
