@@ -65,7 +65,7 @@ export const sections = [
 ];
 
 export const companies = [
-  "GSwift",
+  "Pathpalz",
   "Berrystamp",
   "Busineess Prompt Pro",
   "Deep Focus",
@@ -75,7 +75,7 @@ export const companies = [
 export const companiesInfo = [
   {
     title: "Frontend Engineer",
-    company: "Gswift",
+    company: "Pathpalz",
     location: "Uk(remote)",
     duration: "February 2023 - June 2024",
     roles: [
@@ -135,17 +135,16 @@ export const projects = [
     description:
       "Berrystamp is revolutionizing the print-on-demand industry with its innovative approach to customization and printing services.",
     image: "/images/Berrystamp.png",
-    link: "https://berrystamp.com/",
-    stacks: ["JavaScript", "TypeScript", "React", "TailwindCss"],
+    liveLink: "https://berrystamp.com/",
+    stacks: ["TypeScript", "React", "TailwindCss", "Redux"],
   },
   {
-    name: "GoSwift",
+    name: "GSwift",
     type: "Featured Project",
     description:
       "A Gwift web app is a progressive ridesharing application with real-time tracking, seamless geocoordinate integration, and a user-friendly interface, prioritizing smooth navigation and efficient API consumption.",
     image: "/images/Gswift.png",
-    link: "https://gswift.pathpalz.com/",
-    stacks: ["JavaScript", "TypeScript", "React", "TailwindCss"],
+    stacks: ["TypeScript", "React", "TailwindCss"],
   },
   {
     name: "Huntstore",
@@ -153,45 +152,66 @@ export const projects = [
     description:
       "Huntstore is an ecommerce store that shows a variety of gender products.",
     image: "/images/huntstore.png",
-    link: "https://huntstore.vercel.app/",
+    liveLink: "https://huntstore.vercel.app/",
+    githubLink: "https://github.com/Farouk-ayo/huntstore",
     stacks: ["JavaScript", "React", "css"],
   },
   {
-    name: "Huntstore",
+    name: "Duplicate character remover",
     type: "Personal Project",
     description:
-      "Huntstore is an ecommerce store that shows a variety of gender products.",
-    image: "/images/huntstore.png",
-    link: "https://huntstore.vercel.app/",
+      "A houseware frontend engineering octernship task to develop a webapp for deletion of duplicate characters on clicking on the selected duplicated character or text",
+    image: "/images/duplicateRemover.png",
+    liveLink:
+      "https://houseware-frontend-engineering-octernship-frk-ayo.vercel.app/",
     stacks: ["JavaScript", "React", "css"],
   },
   {
-    name: "Huntstore",
+    name: "E-vent",
+    type: "Featured Project",
+    description:
+      "E-vent is a centralized platform for event planners, organizers and attendees, to coordinate and manage various aspects of events such as scheduling, ticketing, registration, marketing and communication",
+    image: "/images/e-vent.png",
+    stacks: ["JavaScript", "React", "Tailwind", "Mui"],
+  },
+  {
+    name: "MovieBox",
     type: "Personal Project",
     description:
-      "Huntstore is an ecommerce store that shows a variety of gender products.",
-    image: "/images/huntstore.png",
-    link: "https://huntstore.vercel.app/",
+      "A movie discovery web application that allows users to search for movies, view details about them, and save their favorite movies, consuming data from the TMDB API.",
+    image: "/images/moviebox.png",
+    liveLink: "https://movie-box-tmdb.vercel.app/",
+    githubLink: "https://github.com/Farouk-ayo/movie--boxTMDB/tree/master",
     stacks: ["JavaScript", "React", "css"],
   },
   {
-    name: "Huntstore",
-    type: "Personal Project",
+    name: "Penslab",
+    type: "Featured Project",
     description:
-      "Huntstore is an ecommerce store that shows a variety of gender products.",
-    image: "/images/huntstore.png",
-    link: "https://huntstore.vercel.app/",
-    stacks: ["JavaScript", "React", "css"],
+      "An Electrical Electronics Engineering Departmental Project in connection to an Arduino Sensor",
+    image: "/images/penslab.png",
+    liveLink: "https://penslab.vercel.app/",
+    githubLink: "https://github.com/Farouk-ayo/penslab",
+    stacks: ["JavaScript", "React", "Tailwind"],
   },
   {
-    name: "Huntstore",
+    name: "Yalbaze",
+    type: "Personal Project",
+    description: "A designed webapp landing page",
+    image: "/images/yalbaze.png",
+    githubLink: "https://github.com/Farouk-ayo/yalbaze",
+    liveLink: "https://yalbaze.vercel.app/",
+    stacks: ["css", "React"],
+  },
+  {
+    name: "Frk-ayo",
     type: "Personal Project",
     description:
-      "Huntstore is an ecommerce store that shows a variety of gender products.",
-    image: "/images/huntstore.png",
-    link: "https://huntstore.vercel.app/",
-    stacks: ["JavaScript", "React", "css"],
+      "The aim of the project was to attract the users with the UI, which i built with HTML/CSS and JavaScript.",
+    image: "/images/Frk_ayo.png",
+    githubLink: "https://github.com/Farouk-ayo/Frkayo-Financesite",
+    liveLink: "https://frkayo-financesite.vercel.app",
+    stacks: ["Sass/scss", "Html", "JavaScript"],
   },
-
   ,
 ];

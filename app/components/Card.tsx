@@ -6,7 +6,8 @@ interface CardProps {
   type: string;
   description: string;
   image: string;
-  link: string;
+  liveLink?: string;
+  githubLink?: string;
   stacks: Array<string>;
 }
 
@@ -16,20 +17,29 @@ const Card = ({
   type,
   description,
   image,
-  link,
+  liveLink,
+  githubLink,
   stacks,
 }: CardProps) => {
   const isEven = id % 2 === 0;
   return (
     <section className={`flex flex-row w-full  items-center px-12`}>
       <div className={` w-[60%] ${isEven ? "order-1" : "order-2"}`}>
-        <Link href={link} className="w-full">
+        {liveLink ? (
+          <Link href={liveLink} className="w-full">
+            <img
+              src={image}
+              alt={`${name} Image`}
+              className=" object-cover grayscale hover:grayscale-0 transition-all w-full h-[370px] object-left rounded-lg shadow-lg"
+            />
+          </Link>
+        ) : (
           <img
             src={image}
             alt={`${name} Image`}
             className=" object-cover grayscale hover:grayscale-0 transition-all w-full h-[370px] object-left rounded-lg shadow-lg"
           />
-        </Link>
+        )}
       </div>
 
       <div
@@ -51,15 +61,37 @@ const Card = ({
             <span>{stack}</span>
           ))}
         </div>
-        <Link
-          href={link}
-          className={`mt-2 flex ${isEven ? " justify-end" : " justify-start"}`}
+        <div
+          className={`flex gap-4 items-center  ${
+            isEven ? " justify-end" : " justify-start"
+          } `}
         >
-          <FaArrowUpRightFromSquare
-            size={20}
-            className="text-secondary-color-3 "
-          />
-        </Link>
+          {liveLink && (
+            <Link
+              href={liveLink}
+              className={`mt-2 flex ${
+                isEven ? " justify-end" : " justify-start"
+              }`}
+            >
+              <FaArrowUpRightFromSquare size={20} className="text-black" />
+            </Link>
+          )}
+          {githubLink && (
+            <Link
+              href={githubLink}
+              className={`mt-2 flex ${
+                isEven ? " justify-end" : " justify-start"
+              }`}
+            >
+              <img
+                src={"https://cdn.simpleicons.org/github"}
+                alt={"github repo"}
+                height={20}
+                width={20}
+              />
+            </Link>
+          )}
+        </div>
       </div>
     </section>
   );

@@ -1,6 +1,7 @@
 import { projects } from "@/datas/data";
 import Card from "../components/Card";
 import Link from "next/link";
+import { IoArrowForward } from "react-icons/io5";
 
 const Works = () => {
   return (
@@ -13,7 +14,7 @@ const Works = () => {
       </header>
       <div className="flex flex-col gap-24 mt-10">
         {projects
-          .slice(0, 3)
+          .slice(0, 4)
           .map(
             (project, id) =>
               project && (
@@ -23,13 +24,23 @@ const Works = () => {
                   name={project?.name}
                   description={project?.description}
                   image={project?.image}
-                  link={project?.link}
+                  githubLink={project?.githubLink}
+                  liveLink={project?.liveLink}
                   stacks={project?.stacks}
                   type={project?.type}
                 />
               )
           )}
-        <Link href={"/works"}> See all</Link>
+        <Link
+          href={"/works"}
+          className="flex justify-center items-center text-black font-bold"
+        >
+          <span className="">View All Projects</span>
+
+          <span>
+            <IoArrowForward size={20} className=" text-secondary-color-3" />
+          </span>
+        </Link>
       </div>
     </section>
   );
