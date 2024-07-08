@@ -1,10 +1,9 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
-import Link from "next/link";
 import Navbar from "./components/Navbar";
-import { Providers } from "./providers";
-import ThemeSwitcher from "./components/ThemeSwitcher";
+import Sidebar from "./components/Sidebar";
+import Copyright from "./sections/Copyright";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -21,11 +20,10 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <body className={`${inter.className} `}>
-        <Providers>
-          <ThemeSwitcher />
-          <Navbar />
-          {children}
-        </Providers>
+        <Navbar />
+        <Sidebar />
+        <main className="px-12">{children}</main>
+        <Copyright />
       </body>
     </html>
   );
