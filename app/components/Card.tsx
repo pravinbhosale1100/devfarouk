@@ -1,5 +1,7 @@
 import { FaArrowUpRightFromSquare } from "react-icons/fa6";
 import Link from "next/link";
+import Image from "next/image";
+
 interface CardProps {
   id: number;
   name: string;
@@ -32,16 +34,22 @@ const Card = ({
             target="_blank"
             rel="noopener noreferrer"
           >
-            <img
+            <Image
               src={image}
               alt={`${name} Image`}
+              layout="responsive"
+              width={640}
+              height={370}
               className=" object-cover grayscale hover:grayscale-0 transition-all w-full h-[370px] object-left rounded-lg shadow-lg"
             />
           </Link>
         ) : (
-          <img
+          <Image
             src={image}
             alt={`${name} Image`}
+            layout="responsive"
+            width={640}
+            height={370}
             className=" object-cover grayscale hover:grayscale-0 transition-all w-full h-[370px] object-left rounded-lg shadow-lg"
           />
         )}
