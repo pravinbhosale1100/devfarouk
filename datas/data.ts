@@ -134,7 +134,7 @@ export const projects = [
     type: "Featured Project",
     description:
       "Berrystamp is revolutionizing the print-on-demand industry with its innovative approach to customization and printing services.",
-    image: "/images/Berrystamp.webp",
+    image: "/images/berrystamp.webp",
     liveLink: "https://berrystamp.com/",
     stacks: ["TypeScript", "React", "TailwindCss", "Redux"],
   },
@@ -143,7 +143,7 @@ export const projects = [
     type: "Featured Project",
     description:
       "A Gwift web app is a progressive ridesharing application with real-time tracking, seamless geocoordinate integration, and a user-friendly interface, prioritizing smooth navigation and efficient API consumption.",
-    image: "/images/Gswift.webp",
+    image: "/images/gswift.webp",
     stacks: ["TypeScript", "React", "TailwindCss"],
   },
   {
@@ -161,7 +161,7 @@ export const projects = [
     type: "Personal Project",
     description:
       "A houseware frontend engineering octernship task to develop a webapp for deletion of duplicate characters on clicking on the selected duplicated character or text",
-    image: "/images/duplicateRemover.webp",
+    image: "/images/duplicateremover.webp",
     liveLink:
       "https://houseware-frontend-engineering-octernship-frk-ayo.vercel.app/",
     stacks: ["JavaScript", "React", "css"],
@@ -208,7 +208,7 @@ export const projects = [
     type: "Personal Project",
     description:
       "The aim of the project was to attract the users with the UI, which i built with HTML/CSS and JavaScript.",
-    image: "/images/Frk_ayo.webp",
+    image: "/images/frk_ayo.webp",
     githubLink: "https://github.com/Farouk-ayo/Frkayo-Financesite",
     liveLink: "https://frkayo-financesite.vercel.app",
     stacks: ["Sass/scss", "Html", "JavaScript"],
