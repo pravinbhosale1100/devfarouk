@@ -8,8 +8,8 @@ import Copyright from "./sections/Copyright";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "DevFarouk 👨‍💻",
-  description: "Portfolio || DevFarouk",
+  title: "DevFarouk Portfolio",
+  description: "Frontend Engineer",
 };
 
 export default function RootLayout({

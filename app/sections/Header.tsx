@@ -46,7 +46,7 @@ const Header = () => {
         <div className="relative h-[17rem] w-[17rem]">
           <Image
             alt="profile image"
-            src={"/images/profile.jpg"}
+            src={"/images/profile.webp"}
             style={{
               borderRadius: "50%",
               height: "100%",
