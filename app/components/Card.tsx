@@ -26,7 +26,12 @@ const Card = ({
     <section className={`flex flex-row w-full  items-center px-12`}>
       <div className={` w-[60%] ${isEven ? "order-1" : "order-2"}`}>
         {liveLink ? (
-          <Link href={liveLink} className="w-full">
+          <Link
+            href={liveLink}
+            className="w-full"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <img
               src={image}
               alt={`${name} Image`}
