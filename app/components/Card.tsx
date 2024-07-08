@@ -37,20 +37,18 @@ const Card = ({
             <Image
               src={image}
               alt={`${name} Image`}
-              layout="responsive"
               width={640}
-              height={370}
-              className=" object-cover grayscale hover:grayscale-0 transition-all w-full h-[370px] object-left rounded-lg shadow-lg"
+              height={500}
+              className={`  grayscale hover:grayscale-0 transition-all w-full   shadow-lg rounded-md  h-[350px] object-left-top`}
             />
           </Link>
         ) : (
           <Image
             src={image}
             alt={`${name} Image`}
-            layout="responsive"
             width={640}
-            height={370}
-            className=" object-cover grayscale hover:grayscale-0 transition-all w-full h-[370px] object-left rounded-lg shadow-lg"
+            height={500}
+            className={` grayscale hover:grayscale-0 transition-all w-full   shadow-lg rounded-md  h-[350px] object-left-top`}
           />
         )}
       </div>
@@ -65,7 +63,7 @@ const Card = ({
         <div
           className={`px-5 py-7 bg-[#FBEDDD] ${
             isEven ? "-ml-16" : "-mr-16"
-          }  mt-2 rounded-md z-10 relative`}
+          }  mt-4 rounded-md z-10 relative`}
         >
           {description}
         </div>
@@ -82,7 +80,7 @@ const Card = ({
           {liveLink && (
             <Link
               href={liveLink}
-              className={`mt-2 flex ${
+              className={`mt-4 flex ${
                 isEven ? " justify-end" : " justify-start"
               }`}
             >
@@ -92,7 +90,7 @@ const Card = ({
           {githubLink && (
             <Link
               href={githubLink}
-              className={`mt-2 flex ${
+              className={`mt-4 flex ${
                 isEven ? " justify-end" : " justify-start"
               }`}
             >
