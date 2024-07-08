@@ -7,10 +7,10 @@ const Navbar = () => {
     <section className="fixed top-0 h-24 flex flex-row items-center w-full shadow-sm justify-between  px-16 z-20 bg-[#fffbf5]">
       <Link
         href={"/"}
-        className="flex justify-center items-center uppercase tracking-wider"
+        className="flex justify-center items-center uppercase tracking-wider "
       >
-        <h1 className=" font-bold text-6xl text-secondary-color-3">Dev</h1>
-        <p className=" text-3xl font-extrabold">Farouk</p>
+        <h1 className=" font-bold text-6xl text-secondary-color-3 ">Dev</h1>
+        <p className=" text-3xl font-extrabold  ">Farouk</p>
       </Link>
       <div className=" ">
         <nav className=" w-full flex flex-row justify-between items-center ">
@@ -29,8 +29,12 @@ const Navbar = () => {
             <li>
               {" "}
               <Link
-                href={"/"}
+                href={
+                  "https://docs.google.com/document/d/1bp5RxbPMA8RHlcUGZIOXIKQ8I1wzLx3MvOQLXVlf8SQ/edit?usp=sharing"
+                }
                 className="flex items-center justify-center gap-3 px-5 py-2  font-semibold w-max     border-[1px] hover:bg-[#FBEDDD] transition-all border-black rounded-lg "
+                target="_blank"
+                rel="noopener noreferrer"
               >
                 View Resume
                 <HiDocumentText size={25} />

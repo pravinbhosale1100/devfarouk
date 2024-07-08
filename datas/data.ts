@@ -16,9 +16,9 @@ export const socialLinks = [
   },
 
   {
-    name: "Gmail",
-    link: "mailto:your.mustaphafarouk41@gmail.com",
-    simpleIcon: "https://cdn.simpleicons.org/gmail",
+    name: "Instagram",
+    link: "https://www.instagram.com/dev_farouk/",
+    simpleIcon: "https://cdn.simpleicons.org/instagram",
   },
 ];
 
@@ -58,10 +58,10 @@ export const technologies = [
 ];
 
 export const sections = [
-  { idRoute: "/about", name: "About" },
-  { idRoute: "/experience", name: "Experience" },
-  { idRoute: "/works", name: "Works" },
-  { idRoute: "/contact", name: "Contact" },
+  { idRoute: "#about", name: "About" },
+  { idRoute: "#experience", name: "Experience" },
+  { idRoute: "#works", name: "Works" },
+  { idRoute: "#contact", name: "Contact" },
 ];
 
 export const companies = [
@@ -74,7 +74,7 @@ export const companies = [
 
 export const companiesInfo = [
   {
-    title: "Frontend Engineer",
+    title: "Lead Frontend Engineer",
     company: "Pathpalz",
     location: "Uk(remote)",
     duration: "February 2023 - June 2024",

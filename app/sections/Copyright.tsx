@@ -8,6 +8,8 @@ const Copyright = () => {
         <Link
           href={"https://github.com/Farouk-ayo/devfarouk"}
           className=" text-secondary-color-3  font-bold"
+          target="_blank"
+          rel="noopener noreferrer"
         >
           {" "}
           devfarouk 👨‍💻
@@ -16,6 +18,8 @@ const Copyright = () => {
         <Link
           href={"https://www.geekmaros.dev/"}
           className=" font-extrabold text-black"
+          target="_blank"
+          rel="noopener noreferrer"
         >
           Geekmaros
         </Link>{" "}

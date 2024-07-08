@@ -3,7 +3,7 @@ import Image from "next/image";
 
 const About = () => {
   return (
-    <section className="flex flex-col px-40 ">
+    <section className="flex flex-col px-40 my-48 " id="about">
       <div className="flex flex-row gap-4 justify-end items-center font-semibold">
         <span className=" text-2xl">01. About Me</span>
         <div className=" w-36 border-b-[1px] border-b-border-color"></div>
@@ -45,24 +45,3 @@ const About = () => {
   );
 };
 export default About;
-
-{
-  /* <div className="w-[50%] flex flex-col gap-2 ">
-<h4 className="font-semibold">Technologies i work with</h4>
-<div style={{ backgroundImage: "url('/patterns/pattern-4.svg')" }}>
-  <ul className="px-8 py-8 flex flex-col gap-2 h-72  flex-wrap w-full">
-    {technologies.map((tech) => (
-      <li className=" grayscale hover:grayscale-0 flex items-center cursor-pointer gap-5">
-        <img
-          src={tech.iconLink}
-          alt={tech.name}
-          height={50}
-          width={50}
-        />
-        <span>{tech.name}</span>
-      </li>
-    ))}
-  </ul>
-</div>
-</div> */
-}

@@ -5,7 +5,7 @@ import { IoArrowForward } from "react-icons/io5";
 
 const Works = () => {
   return (
-    <section className="flex flex-col px-40 py-12">
+    <section className="flex flex-col px-40 my-12" id="works">
       <header className="flex flex-row gap-4 justify-end items-center font-semibold">
         <span className=" text-2xl">03. Things I've Built</span>
         <div className=" w-  ">
@@ -14,7 +14,7 @@ const Works = () => {
       </header>
       <div className="flex flex-col gap-24 mt-10">
         {projects
-          .slice(0, 4)
+          .slice(0, 5)
           .map(
             (project, id) =>
               project && (

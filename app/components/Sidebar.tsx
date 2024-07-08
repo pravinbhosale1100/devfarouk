@@ -10,7 +10,11 @@ const Sidebar = () => {
             key={id}
             className={`grayscale hover:grayscale-0 flex items-center cursor-pointer gap-5`}
           >
-            <Link href={socialLink.link}>
+            <Link
+              href={socialLink.link}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <img
                 src={socialLink.simpleIcon}
                 alt={socialLink.name}
