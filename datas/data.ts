@@ -134,7 +134,7 @@ export const projects = [
     type: "Featured Project",
     description:
       "Berrystamp is revolutionizing the print-on-demand industry with its innovative approach to customization and printing services.",
-    image: "/images/berrystamp.webp",
+    image: "/berrystamp.webp",
     liveLink: "https://berrystamp.com/",
     stacks: ["TypeScript", "React", "TailwindCss", "Redux"],
   },
@@ -143,7 +143,7 @@ export const projects = [
     type: "Featured Project",
     description:
       "A Gwift web app is a progressive ridesharing application with real-time tracking, seamless geocoordinate integration, and a user-friendly interface, prioritizing smooth navigation and efficient API consumption.",
-    image: "/images/gswift.webp",
+    image: "/gswift.webp",
     stacks: ["TypeScript", "React", "TailwindCss"],
   },
   {
@@ -151,7 +151,7 @@ export const projects = [
     type: "Personal Project",
     description:
       "Huntstore is an ecommerce store that shows a variety of gender products.",
-    image: "/images/huntstore.webp",
+    image: "/huntstore.webp",
     liveLink: "https://huntstore.vercel.app/",
     githubLink: "https://github.com/Farouk-ayo/huntstore",
     stacks: ["JavaScript", "React", "css"],
@@ -161,7 +161,7 @@ export const projects = [
     type: "Personal Project",
     description:
       "A houseware frontend engineering octernship task to develop a webapp for deletion of duplicate characters on clicking on the selected duplicated character or text",
-    image: "/images/duplicateremover.webp",
+    image: "/duplicateremover.webp",
     liveLink:
       "https://houseware-frontend-engineering-octernship-frk-ayo.vercel.app/",
     stacks: ["JavaScript", "React", "css"],
@@ -171,7 +171,7 @@ export const projects = [
     type: "Featured Project",
     description:
       "E-vent is a centralized platform for event planners, organizers and attendees, to coordinate and manage various aspects of events such as scheduling, ticketing, registration, marketing and communication",
-    image: "/images/e-vent.webp",
+    image: "/e-vent.webp",
     stacks: ["JavaScript", "React", "Tailwind", "Mui"],
   },
   {
@@ -179,7 +179,7 @@ export const projects = [
     type: "Personal Project",
     description:
       "A movie discovery web application that allows users to search for movies, view details about them, and save their favorite movies, consuming data from the TMDB API.",
-    image: "/images/moviebox.webp",
+    image: "/moviebox.webp",
     liveLink: "https://movie-box-tmdb.vercel.app/",
     githubLink: "https://github.com/Farouk-ayo/movie--boxTMDB/tree/master",
     stacks: ["JavaScript", "React", "css"],
@@ -189,7 +189,7 @@ export const projects = [
     type: "Featured Project",
     description:
       "An Electrical Electronics Engineering Departmental Project in connection to an Arduino Sensor",
-    image: "/images/penslab.webp",
+    image: "/penslab.webp",
     liveLink: "https://penslab.vercel.app/",
     githubLink: "https://github.com/Farouk-ayo/penslab",
     stacks: ["JavaScript", "React", "Tailwind"],
@@ -198,7 +198,7 @@ export const projects = [
     name: "Yalbaze",
     type: "Personal Project",
     description: "A designed webapp landing page",
-    image: "/images/yalbaze.webp",
+    image: "/yalbaze.webp",
     githubLink: "https://github.com/Farouk-ayo/yalbaze",
     liveLink: "https://yalbaze.vercel.app/",
     stacks: ["css", "React"],
@@ -208,7 +208,7 @@ export const projects = [
     type: "Personal Project",
     description:
       "The aim of the project was to attract the users with the UI, which i built with HTML/CSS and JavaScript.",
-    image: "/images/frk_ayo.webp",
+    image: "/frk_ayo.webp",
     githubLink: "https://github.com/Farouk-ayo/Frkayo-Financesite",
     liveLink: "https://frkayo-financesite.vercel.app",
     stacks: ["Sass/scss", "Html", "JavaScript"],
