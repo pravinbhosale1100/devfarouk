@@ -1,6 +1,5 @@
 import { FaArrowUpRightFromSquare } from "react-icons/fa6";
 import Link from "next/link";
-import Image from "next/image";
 
 interface CardProps {
   id: number;
@@ -34,21 +33,17 @@ const Card = ({
             target="_blank"
             rel="noopener noreferrer"
           >
-            <Image
+            <img
               src={image}
               alt={`${name} Image`}
-              width={640}
-              height={500}
-              className={`  grayscale hover:grayscale-0 transition-all w-full   shadow-lg rounded-md  h-[350px] object-left-top`}
+              className=" object-cover grayscale hover:grayscale-0 transition-all w-full h-[370px] object-left rounded-lg shadow-lg"
             />
           </Link>
         ) : (
-          <Image
+          <img
             src={image}
             alt={`${name} Image`}
-            width={640}
-            height={500}
-            className={` grayscale hover:grayscale-0 transition-all w-full   shadow-lg rounded-md  h-[350px] object-left-top`}
+            className=" object-cover grayscale hover:grayscale-0 transition-all w-full h-[370px] object-left rounded-lg shadow-lg"
           />
         )}
       </div>
@@ -63,7 +58,7 @@ const Card = ({
         <div
           className={`px-5 py-7 bg-[#FBEDDD] ${
             isEven ? "-ml-16" : "-mr-16"
-          }  mt-4 rounded-md z-10 relative`}
+          }  mt-2 rounded-md z-10 relative`}
         >
           {description}
         </div>
@@ -80,7 +75,7 @@ const Card = ({
           {liveLink && (
             <Link
               href={liveLink}
-              className={`mt-4 flex ${
+              className={`mt-2 flex ${
                 isEven ? " justify-end" : " justify-start"
               }`}
             >
@@ -90,7 +85,7 @@ const Card = ({
           {githubLink && (
             <Link
               href={githubLink}
-              className={`mt-4 flex ${
+              className={`mt-2 flex ${
                 isEven ? " justify-end" : " justify-start"
               }`}
             >
