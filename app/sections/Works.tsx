@@ -9,9 +9,9 @@ const Works = () => {
       className="flex flex-col mx-0 xl:mx-[10%] lg:mx-[7%] md:mx-[7%] my-8 lg:my-48"
       id="works"
     >
-      <header className="flex flex-row gap-4  justify-start lg:justify-end items-center font-semibold">
-        <div className="flex flex-row gap-4 justify-center lg:justify-end items-center font-semibold">
-          <span className=" font-semibold text-2xl">03. Things I've Built</span>
+      <header className="flex flex-row gap-4  justify-start lg:justify-end items-center font-b">
+        <div className="flex flex-row gap-4 justify-center lg:justify-end items-center font-bold">
+          <span className=" font-bold text-2xl">03. Things I've Built</span>
           <div className="w-[5%] lg:w-36 border-b-[1px] border-b-border-color"></div>
         </div>
       </header>

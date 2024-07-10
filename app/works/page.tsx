@@ -10,7 +10,7 @@ export default function Work() {
         <Link href={"/"} className=" p-2 bg-[#FBEDDD] text-black flex w-min">
           <IoMdArrowRoundBack size={25} />
         </Link>
-        <h1 className=" font-semibold text-5xl">Works</h1>
+        <h1 className=" font-b text-5xl">Works</h1>
       </div>
       {projects.map(
         (project, id) =>

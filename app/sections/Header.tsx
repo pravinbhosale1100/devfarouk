@@ -8,13 +8,13 @@ const Header = () => {
       <section className=" w-full  xl:w-[50%] relative pb-10   flex flex-col gap-4 lg:w-[60%]">
         <div className="flex flex-col gap-2">
           <span className=" font-medium text-lg">Hi, I'm</span>
-          <h1 className=" font-semibold text-6xl">Farouk Mustapha</h1>
+          <h1 className=" font-bold text-6xl">Farouk Mustapha</h1>
         </div>
         <div className="relative">
           <h2 className=" py-1 px-2 bg-[#FBEDDD] font-bold text-secondary-color-3 w-max rounded-md text-xl">
             A Front-end Developer
           </h2>
-          <h2 className="text-black text-3xl font-semibold mt-4">
+          <h2 className="text-black text-3xl font-bold mt-4">
             I <span className=" text-secondary-color-3 ">D</span>
             <span className="text-black">esign</span> &{" "}
             <span className=" text-secondary-color-3 ">D</span>
@@ -28,7 +28,7 @@ const Header = () => {
         </div>
         <Link
           href={"mailto:your.mustaphafarouk41@gmail.com"}
-          className="flex items-center justify-center gap-3 px-5 py-2  font-semibold w-max  mt-5   border-[1px] hover:bg-[#FBEDDD]  transition-all border-black rounded-lg"
+          className="flex items-center justify-center gap-3 px-5 py-2  font-bold w-max  mt-5   border-[1px] hover:bg-[#FBEDDD]  transition-all border-black rounded-lg"
         >
           Get in Touch
           <Image

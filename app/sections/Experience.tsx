@@ -11,8 +11,8 @@ const Experience = () => {
       className="flex flex-col mx-0 xl:mx-[10%] lg:mx-[7%] md:mx-[7%] py-12"
       id="experience"
     >
-      <header className="flex flex-row gap-4 justify-start items-center font-semibold">
-        <span className=" font-semibold text-2xl">02. Where I've worked</span>
+      <header className="flex flex-row gap-4 justify-start items-center font-bold">
+        <span className=" font-bold text-2xl">02. Where I've worked</span>
         <div className=" w-[5%] lg:w-36 border-b-[1px] border-b-border-color"></div>
       </header>
       <div className="flex flex-col gap-5 lg:flex-row w-full py-10  lg:gap-10 items-center">
@@ -24,7 +24,7 @@ const Experience = () => {
           {companies.map((company, id) => (
             <div
               key={id}
-              className={` min-w-52 lg:w-full cursor-pointer hover:text-secondary-color-3 hover:bg-[#FBEDDD] transition-all px-5 py-2 font-semibold ${
+              className={` min-w-52 lg:w-full cursor-pointer hover:text-secondary-color-3 hover:bg-[#FBEDDD] transition-all px-5 py-2 font-bold ${
                 tab == id &&
                 " border-b-2 lg:border-b-0  lg:border-l-2 border-secondary-color-3 bg-[#FBEDDD] text-secondary-color-3"
               }`}
@@ -35,7 +35,7 @@ const Experience = () => {
           ))}
         </div>
         <div className="w-[100%] lg:w-[60%]  lg:h-64">
-          <h3 className=" text-lg font-semibold">
+          <h3 className=" text-lg font-bold">
             {companiesInfo[tab].title} @
             <span className="text-secondary-color-3">
               {companiesInfo[tab].company}

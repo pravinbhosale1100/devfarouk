@@ -36,7 +36,7 @@ const Navbar = () => {
                 href={
                   "https://docs.google.com/document/d/1bp5RxbPMA8RHlcUGZIOXIKQ8I1wzLx3MvOQLXVlf8SQ/edit?usp=sharing"
                 }
-                className="flex items-center justify-center gap-3 px-5 py-2  font-semibold w-max     border-[1px] hover:bg-[#FBEDDD] transition-all border-black rounded-lg "
+                className="flex items-center justify-center gap-3 px-5 py-2  font-b w-max     border-[1px] hover:bg-[#FBEDDD] transition-all border-black rounded-lg "
                 target="_blank"
                 rel="noopener noreferrer"
               >
