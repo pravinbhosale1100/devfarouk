@@ -2,8 +2,8 @@ import Link from "next/link";
 
 const Copyright = () => {
   return (
-    <div className="  py-6  flex flex-col justify-center items-center font-medium text-lg border-t ">
-      <p className=" ">
+    <div className="  py-6  flex flex-col justify-center items-center font-medium text-base sm:text-lg border-t ">
+      <p className=" text-center">
         Designed by
         <Link
           href={"https://github.com/Farouk-ayo/devfarouk"}

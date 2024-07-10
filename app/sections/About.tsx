@@ -1,5 +1,4 @@
 import { technologies } from "@/datas/data";
-import Image from "next/image";
 
 const About = () => {
   return (
@@ -7,15 +6,16 @@ const About = () => {
       className="flex flex-col my-0 lg:my-48 mx-0 xl:mx-[10%] lg:mx-[7%] md:mx-[7%]"
       id="about"
     >
-      <div className="flex flex-row gap-4 justify-end items-center font-semibold">
+      <div className="flex flex-row gap-4 justify-center lg:justify-end items-center font-semibold">
+        <div className="w-[5%%] lg:hidden lg:w-36 border-b-[1px] border-b-border-color"></div>
         <span className=" text-2xl">01. About Me</span>
-        <div className=" w-36 border-b-[1px] border-b-border-color"></div>
+        <div className="w-[5%] lg:w-36 border-b-[1px] border-b-border-color"></div>
       </div>
       <div className="flex flex-col  lg:flex-row w-full py-10  gap-10">
         <div className="w-full lg:w-[50%] flex flex-col gap-2 order-2 lg:order-1">
           <h4 className="font-semibold">Technologies i work with</h4>
           <div style={{ backgroundImage: "url('/patterns/pattern-4.svg')" }}>
-            <ul className="px-8 py-8 flex flex-col gap-4 h-80 lg:gap-2 lg:h-72  flex-wrap w-full">
+            <ul className="px-8 py-8 flex flex-row  h-auto sm:flex-col gap-4 sm:h-80 lg:gap-2 lg:h-72  flex-wrap w-full">
               {technologies.map((tech) => (
                 <li className="  grayscale hover:grayscale-0 flex items-center cursor-pointer gap-5">
                   <img
@@ -24,7 +24,7 @@ const About = () => {
                     height={50}
                     width={50}
                   />
-                  <span>{tech.name}</span>
+                  <span className="hidden sm:inline-block">{tech.name}</span>
                 </li>
               ))}
             </ul>

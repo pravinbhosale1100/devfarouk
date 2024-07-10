@@ -4,15 +4,17 @@ import { HiDocumentText } from "react-icons/hi";
 
 const Navbar = () => {
   return (
-    <section className="fixed top-0 h-24 flex flex-row items-center w-full shadow-sm justify-between  px-16 z-20 bg-[#fffbf5]">
+    <section className="fixed top-0 h-24 flex flex-row items-center w-full shadow-sm justify-between  px-5 sm:px-16 z-20 bg-[#fffbf5]">
       <Link
         href={"/"}
-        className="flex justify-center items-center uppercase tracking-wider "
+        className="flex justify-start sm:justify-center items-center uppercase tracking-wider "
       >
-        <h1 className=" text-4xl font-bold lg:text-6xl text-secondary-color-3 ">
+        <h1 className=" text-3xl sm:text-4xl font-bold lg:text-6xl text-secondary-color-3 ">
           Dev
         </h1>
-        <p className=" text-2xl lg:text-3xl font-extrabold  ">Farouk</p>
+        <p className=" text-xl sm:text-2xl lg:text-3xl font-extrabold  ">
+          Farouk
+        </p>
       </Link>
       <div className="  hidden md:inline-block ">
         <nav className=" w-full flex flex-row justify-between items-center ">
