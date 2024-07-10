@@ -35,7 +35,8 @@
 @tailwind utilities;
 @import url("https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Rubik+Mono+One&display=swap");
+/* @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Rubik+Mono+One&display=swap"); */
+@import url("https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300;400;500;600;700&display=swap");
 
 :root {
   --foreground-hex: black;
@@ -53,10 +54,11 @@
 }
 
 * {
-  font-family: "Rubik Mono One", monospace;
-  font-style: normal;
   letter-spacing: 1px;
   word-spacing: 2px;
+  font-family: "Hind Siliguri", sans-serif;
+  font-weight: 300;
+  font-style: normal;
 }
 
 body {

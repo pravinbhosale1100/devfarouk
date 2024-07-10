@@ -9,10 +9,10 @@ const Navbar = () => {
         href={"/"}
         className="flex justify-start sm:justify-center items-center uppercase tracking-wider "
       >
-        <h1 className=" text-3xl sm:text-4xl font-bold lg:text-6xl text-secondary-color-3 ">
+        <h1 className=" text-3xl sm:text-3xl font-bold lg:text-4xl text-secondary-color-3 ">
           Dev
         </h1>
-        <p className=" text-xl sm:text-2xl lg:text-3xl font-extrabold  ">
+        <p className=" text-xl sm:text-2xl lg:text-2xl font-extrabold  ">
           Farouk
         </p>
       </Link>
