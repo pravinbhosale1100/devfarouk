@@ -8,17 +8,17 @@ const Header = () => {
       <section className=" w-full  xl:w-[70%] relative pb-10   flex flex-col gap-4 lg:w-[70%]">
         <div className="flex flex-col gap-2">
           <span className=" font-medium text-lg">Hi, I'm</span>
-          <h1 className=" font-bold  text-5xl md:text-7xl">Farouk Mustapha</h1>
+          <h1 className=" font-bold  text-6xl md:text-7xl">Farouk Mustapha</h1>
         </div>
         <div className="relative">
           <h2 className=" py-1 px-2 bg-[#FBEDDD] font-bold text-secondary-color-3 w-max rounded-md text-xl">
             A Front-end Developer
           </h2>
-          <h2 className="text-black text-3xl font-bold mt-4">
-            I <span className=" text-secondary-color-3 ">D</span>
-            <span className="text-black">esign</span> &{" "}
-            <span className=" text-secondary-color-3 ">D</span>
-            <span className="text-black">evelop</span> WebApps
+          <h2 className="text-black text-2xl sm:text-3xl font-bold mt-4">
+            I <span className=" text-secondary-color-3 font-bold ">d</span>
+            <span className="text-black font-bold">esign</span> &{" "}
+            <span className=" text-secondary-color-3 font-bold">d</span>
+            <span className="text-black font-bold">evelop</span> WebApps
           </h2>
           <p className="mt-2">
             I love turning designs and ideas into cool web experiences, and work
