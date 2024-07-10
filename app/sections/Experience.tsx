@@ -15,17 +15,18 @@ const Experience = () => {
         <span className=" text-2xl">02. Where I've worked</span>
         <div className=" w-36 border-b-[1px] border-b-border-color"></div>
       </header>
-      <div className="flex flex-row w-full py-10  gap-10 items-center">
+      <div className="flex flex-col gap-5 lg:flex-row w-full py-10  lg:gap-10 items-center">
         <div
-          className="w-[30%] border-l-secondary-color-3 border-l-2  "
+          id="companies-scrollbar"
+          className="flex lg:gap-0 overflow-x-scroll lg:inline-block w-[100%]  lg:w-[30%] border-b-2 border-b-[#f2f2f2] lg:border-l-[#f2f2f2] lg:border-l-2  "
           style={{ backgroundImage: "url('/patterns/pattern-4.svg')" }}
         >
           {companies.map((company, id) => (
             <div
               key={id}
-              className={`w-full cursor-pointer hover:text-white hover:bg-secondary-color-3 transition-all px-5 py-2 font-semibold ${
+              className={` min-w-52 lg:w-full cursor-pointer hover:text-secondary-color-3 hover:bg-[#FBEDDD] transition-all px-5 py-2 font-semibold ${
                 tab == id &&
-                "border-l-2 border-secondary-color-3 bg-secondary-color-3 text-white"
+                " border-b-2 lg:border-b-0  lg:border-l-2 border-secondary-color-3 bg-[#FBEDDD] text-secondary-color-3"
               }`}
               onClick={() => setTab(id)}
             >
@@ -33,7 +34,7 @@ const Experience = () => {
             </div>
           ))}
         </div>
-        <div className="w-[60%] h-64">
+        <div className="w-[100%] lg:w-[60%]  lg:h-64">
           <h3 className=" text-lg font-semibold">
             {companiesInfo[tab].title} @
             <span className="text-secondary-color-3">

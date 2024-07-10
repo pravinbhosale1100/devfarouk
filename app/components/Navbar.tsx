@@ -14,11 +14,11 @@ const Navbar = () => {
         </h1>
         <p className=" text-2xl lg:text-3xl font-extrabold  ">Farouk</p>
       </Link>
-      <div className=" invisible md:visible ">
+      <div className="  hidden md:inline-block ">
         <nav className=" w-full flex flex-row justify-between items-center ">
           <ul className="w-full flex flex-row justify-start items-center font-medium text-lg gap-8">
             {sections.map((section, id) => (
-              <li key={id}>
+              <li key={id} className=" hidden lg:inline-block">
                 <Link
                   key={id}
                   href={section.idRoute}
@@ -28,7 +28,7 @@ const Navbar = () => {
                 </Link>
               </li>
             ))}
-            <li>
+            <li className="hidden lg:inline-block">
               {" "}
               <Link
                 href={

@@ -4,14 +4,14 @@ import { HiDocumentText } from "react-icons/hi";
 
 const Header = () => {
   return (
-    <header className="flex flex-col lg:flex-row justify-between mx-0 mt-24 items-center py-24 bg-center xl:mx-[10%] lg:mx-[7%] md:mx-[7%]">
+    <header className="flex flex-col lg:flex-row justify-between mx-0 mt-24 items-center py-8 lg:py-24 bg-center xl:mx-[10%] lg:mx-[7%] md:mx-[7%]">
       <section className=" w-full  xl:w-[50%] relative pb-10   flex flex-col gap-4 lg:w-[60%]">
         <div className="flex flex-col gap-2">
           <span className=" font-medium text-lg">Hi, I'm</span>
           <h1 className=" font-semibold text-6xl">Farouk Mustapha</h1>
         </div>
         <div className="relative">
-          <h2 className=" py-1 px-2 bg-secondary-color-3 text-white font-semibold w-max rounded-md text-xl">
+          <h2 className=" py-1 px-2 bg-[#FBEDDD] font-bold text-secondary-color-3 font-semibold w-max rounded-md text-xl">
             A Front-end Developer
           </h2>
           <h2 className="text-black text-3xl font-bold mt-4">

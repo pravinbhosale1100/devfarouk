@@ -3,7 +3,7 @@ import Link from "next/link";
 
 const Sidebar = () => {
   return (
-    <section className="fixed top-0  left-0 invisible md:visible w-[10%] h-full ">
+    <section className="fixed top-0  left-0  hidden md:inline-block w-[10%] h-full ">
       <ul className="flex flex-col justify-center items-center gap-10 h-full">
         {socialLinks.map((socialLink, id) => (
           <li

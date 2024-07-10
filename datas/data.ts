@@ -67,14 +67,14 @@ export const sections = [
 export const companies = [
   "Pathpalz",
   "Berrystamp",
-  "Busineess Prompt Pro",
+  "Busineess Prompt",
   "Deep Focus",
   "JustDo Startup",
 ];
 
 export const companiesInfo = [
   {
-    title: "Lead Frontend Engineer",
+    title: "Frontend Engineer",
     company: "Pathpalz",
     location: "Uk(remote)",
     duration: "February 2023 - June 2024",
