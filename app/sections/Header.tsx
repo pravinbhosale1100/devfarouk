@@ -11,7 +11,7 @@ const Header = () => {
           <h1 className=" font-bold  text-6xl md:text-7xl">Farouk Mustapha</h1>
         </div>
         <div className="relative">
-          <h2 className=" py-1 px-2 bg-[#FBEDDD] font-bold text-secondary-color-3 w-max rounded-md text-xl">
+          <h2 className=" py-1 px-2 bg-[#FBEDDD] font-medium text-secondary-color-3 w-max rounded-md text-xl">
             A Front-end Developer
           </h2>
           <h2 className="text-black text-2xl sm:text-3xl font-bold mt-4">

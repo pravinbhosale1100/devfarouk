@@ -5,12 +5,15 @@ import Link from "next/link";
 
 export default function Work() {
   return (
-    <div className="flex flex-col px-40 my-24 py-16 gap-16">
-      <div className=" flex items-center gap-8">
-        <Link href={"/"} className=" p-2 bg-[#FBEDDD] text-black flex w-min">
+    <div className="flex flex-col xl:mx-[10%] lg:mx-[7%] mx-0 md:mx-[7%] my-24 mt-24  py-8 gap-16">
+      <div className=" flex items-center gap-2 sm:gap-8">
+        <Link
+          href={"/"}
+          className=" p-2 bg-[#FBEDDD] rounded-full text-black flex w-min"
+        >
           <IoMdArrowRoundBack size={25} />
         </Link>
-        <h1 className=" font-b text-5xl">Works</h1>
+        <h1 className=" font-semibold text-4xl sm:text-5xl">Works</h1>
       </div>
       {projects.map(
         (project, id) =>
