@@ -4,8 +4,8 @@ import { HiDocumentText } from "react-icons/hi";
 
 const Header = () => {
   return (
-    <header className="flex flex-row justify-between mt-24 items-center pb-24  py-24  bg-center mx-[10%] ">
-      <section className="w-[50%] relative pb-10   flex flex-col gap-4 ">
+    <header className="flex flex-col lg:flex-row justify-between mx-0 mt-24 items-center py-24 bg-center xl:mx-[10%] lg:mx-[7%] md:mx-[7%]">
+      <section className=" w-full  xl:w-[50%] relative pb-10   flex flex-col gap-4 lg:w-[60%]">
         <div className="flex flex-col gap-2">
           <span className=" font-medium text-lg">Hi, I'm</span>
           <h1 className=" font-semibold text-6xl">Farouk Mustapha</h1>
@@ -40,10 +40,10 @@ const Header = () => {
         </Link>
       </section>
       <section
-        className="relative flex justify-end items-center w-[50%] h-[25rem] bg-right bg-contain bg-no-repeat"
+        className=" w-full justify-center md:justify-center relative flex lg:justify-end items-center xl:w-[50%] h-[25rem] bg-center lg:bg-right bg-contain bg-no-repeat lg:w-[40%]"
         style={{ backgroundImage: "url('/svgs/profile-bg.svg')" }}
       >
-        <div className="relative h-[17rem] w-[17rem]">
+        <div className="relative h-[18rem] w-[18rem] lg:h-[17rem] lg:w-[17rem]">
           <Image
             alt="profile image"
             src={"/profile.webp"}

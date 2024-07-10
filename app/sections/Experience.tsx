@@ -7,7 +7,10 @@ const Experience = () => {
   const [tab, setTab] = useState<number>(0);
 
   return (
-    <section className="flex flex-col mx-40 py-12" id="experience">
+    <section
+      className="flex flex-col mx-0 xl:mx-[10%] lg:mx-[7%] md:mx-[7%] py-12"
+      id="experience"
+    >
       <header className="flex flex-row gap-4 justify-start items-center font-semibold">
         <span className=" text-2xl">02. Where I've worked</span>
         <div className=" w-36 border-b-[1px] border-b-border-color"></div>

@@ -5,7 +5,10 @@ import { IoArrowForward } from "react-icons/io5";
 
 const Works = () => {
   return (
-    <section className="flex flex-col px-40 my-12" id="works">
+    <section
+      className="flex flex-col mx-0 xl:mx-[10%] lg:mx-[7%] md:mx-[7%] my-48"
+      id="works"
+    >
       <header className="flex flex-row gap-4 justify-end items-center font-semibold">
         <span className=" text-2xl">03. Things I've Built</span>
         <div className=" w-  ">

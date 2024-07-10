@@ -9,10 +9,12 @@ const Navbar = () => {
         href={"/"}
         className="flex justify-center items-center uppercase tracking-wider "
       >
-        <h1 className=" font-bold text-6xl text-secondary-color-3 ">Dev</h1>
-        <p className=" text-3xl font-extrabold  ">Farouk</p>
+        <h1 className=" text-4xl font-bold lg:text-6xl text-secondary-color-3 ">
+          Dev
+        </h1>
+        <p className=" text-2xl lg:text-3xl font-extrabold  ">Farouk</p>
       </Link>
-      <div className=" ">
+      <div className=" invisible md:visible ">
         <nav className=" w-full flex flex-row justify-between items-center ">
           <ul className="w-full flex flex-row justify-start items-center font-medium text-lg gap-8">
             {sections.map((section, id) => (

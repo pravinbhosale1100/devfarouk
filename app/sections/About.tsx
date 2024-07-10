@@ -3,7 +3,10 @@ import Image from "next/image";
 
 const About = () => {
   return (
-    <section className="flex flex-col px-40 my-48 " id="about">
+    <section
+      className="flex flex-col my-48 mx-0 xl:mx-[10%] lg:mx-[7%] md:mx-[7%]"
+      id="about"
+    >
       <div className="flex flex-row gap-4 justify-end items-center font-semibold">
         <span className=" text-2xl">01. About Me</span>
         <div className=" w-36 border-b-[1px] border-b-border-color"></div>
