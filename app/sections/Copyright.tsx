@@ -17,7 +17,7 @@ const Copyright = () => {
         (Inpsirations from{" "}
         <Link
           href={"https://www.geekmaros.dev/"}
-          className=" font-extrabold text-black"
+          className=" font-bold text-black"
           target="_blank"
           rel="noopener noreferrer"
         >
