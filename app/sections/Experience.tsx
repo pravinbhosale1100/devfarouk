@@ -12,7 +12,7 @@ const Experience = () => {
       id="experience"
     >
       <header className="flex flex-row gap-4 justify-start items-center font-semibold">
-        <span className=" text-2xl">02. Where I've worked</span>
+        <span className=" font-semibold text-2xl">02. Where I've worked</span>
         <div className=" w-[5%] lg:w-36 border-b-[1px] border-b-border-color"></div>
       </header>
       <div className="flex flex-col gap-5 lg:flex-row w-full py-10  lg:gap-10 items-center">

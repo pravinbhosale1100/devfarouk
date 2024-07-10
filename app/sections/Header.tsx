@@ -11,10 +11,10 @@ const Header = () => {
           <h1 className=" font-semibold text-6xl">Farouk Mustapha</h1>
         </div>
         <div className="relative">
-          <h2 className=" py-1 px-2 bg-[#FBEDDD] font-bold text-secondary-color-3 font-semibold w-max rounded-md text-xl">
+          <h2 className=" py-1 px-2 bg-[#FBEDDD] font-bold text-secondary-color-3 w-max rounded-md text-xl">
             A Front-end Developer
           </h2>
-          <h2 className="text-black text-3xl font-bold mt-4">
+          <h2 className="text-black text-3xl font-semibold mt-4">
             I <span className=" text-secondary-color-3 ">D</span>
             <span className="text-black">esign</span> &{" "}
             <span className=" text-secondary-color-3 ">D</span>

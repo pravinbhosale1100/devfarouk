@@ -60,7 +60,7 @@ const Card = ({
         }`}
       >
         <h6 className="text-lg text-secondary-color-3 font-bold">{type}</h6>
-        <h1 className=" text-2xl mt-2 font-semibold ">{name}</h1>
+        <h1 className=" text-2xl mt-2 font-bold ">{name}</h1>
         <div
           className={` px-0 py-0 lg:px-5 lg:py-7 bg-[#FBEDDD] mr-0 ml-0 ${
             isEven ? "lg:-ml-16" : "lg:-mr-16"
