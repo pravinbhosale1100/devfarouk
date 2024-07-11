@@ -4,7 +4,10 @@ import { HiDocumentText } from "react-icons/hi";
 
 const Navbar = () => {
   return (
-    <section className="fixed top-0 h-24 flex flex-row items-center w-full shadow-sm justify-between  px-5 sm:px-16 z-20 bg-[#fffbf5]">
+    <section
+      className="fixed top-0 h-24 flex flex-row items-center w-full shadow-sm justify-between  px-5 sm:px-16 z-20 bg-[#fffbf5]"
+      data-aos="fade-down"
+    >
       <Link
         href={"/"}
         className="flex justify-start sm:justify-center items-center uppercase tracking-wider "

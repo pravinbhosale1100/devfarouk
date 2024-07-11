@@ -4,8 +4,11 @@ import { HiDocumentText } from "react-icons/hi";
 
 const Header = () => {
   return (
-    <header className="flex flex-col lg:flex-row justify-between mx-0 mt-24 items-center py-8 lg:py-24 bg-center xl:mx-[10%] lg:mx-[7%] md:mx-[7%]">
-      <section className=" w-full  xl:w-[70%] relative pb-10   flex flex-col gap-4 lg:w-[70%]">
+    <header className="flex flex-col lg:flex-row justify-between mx-0 mt-24 items-center py-8 lg:py-24 bg-center xl:mx-[10%] lg:mx-[7%] md:mx-[7%] ">
+      <section
+        className=" w-full  xl:w-[70%] relative pb-10   flex flex-col gap-4 lg:w-[70%]"
+        data-aos="fade-right"
+      >
         <div className="flex flex-col gap-2">
           <span className=" font-medium text-lg">Hi, I'm</span>
           <h1 className=" font-bold  text-6xl md:text-7xl">Farouk Mustapha</h1>
@@ -42,6 +45,7 @@ const Header = () => {
       <section
         className=" w-full justify-center md:justify-center relative flex lg:justify-end items-center xl:w-[30%] h-[25rem] bg-center lg:bg-right bg-contain bg-no-repeat lg:w-[30%]"
         style={{ backgroundImage: "url('/svgs/profile-bg.svg')" }}
+        data-aos="zoom-in"
       >
         <div className="relative h-[18rem] w-[18rem] lg:h-[17rem] lg:w-[17rem]">
           <Image

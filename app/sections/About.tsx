@@ -5,6 +5,7 @@ const About = () => {
     <section
       className="flex flex-col my-0 lg:my-48 mx-0 xl:mx-[10%] lg:mx-[7%] md:mx-[7%]"
       id="about"
+      data-aos="fade-up"
     >
       <div className="flex flex-row gap-4 justify-center lg:justify-end items-center font-bold">
         <div className="w-[5%%] lg:hidden lg:w-36 border-b-[1px] border-b-border-color"></div>
