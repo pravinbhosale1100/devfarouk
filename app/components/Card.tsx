@@ -26,14 +26,14 @@ const Card = ({
   return (
     <section
       className={`flex flex-col lg:flex-row w-full md:px-12  items-center px-0`}
+      data-aos={`fade-up`}
+      data-aos-easing="ease-out-cubic"
+      data-aos-duration="2000"
     >
       <div
         className={`w-full sm:w-[90%] lg:w-[60%] ${
           isEven ? "lg:order-1" : "lg:order-2"
         }`}
-        data-aos={`${isEven ? "fade-right" : "fade-left"}`}
-        data-aos-easing="ease-out-cubic"
-        data-aos-duration="2000"
       >
         {liveLink ? (
           <Link

@@ -6,6 +6,7 @@ const Contact = () => {
     <section
       className=" text-center w-full  sm:w-[85%] m-auto my-52   p"
       id="contact"
+      data-aos="fade-up"
     >
       <div className="flex flex-col gap-2 justify-center items-center w-full sm:w-[85%] m-auto">
         <h2 className=" text-lg sm:text-3xl text-secondary-color-3 font-bold italic">
