@@ -13,6 +13,13 @@ const Navbar = () => {
     setIsOpen(!isOpen);
   };
 
+  const handleScroll = (id: string) => {
+    const section = document.getElementById(id);
+    if (section) {
+      section.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
   return (
     <section
       className="fixed top-0 h-24 flex flex-row items-center w-full shadow-sm justify-between px-5 sm:px-16 z-20 bg-[#fffbf5]"

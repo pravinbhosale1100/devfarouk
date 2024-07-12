@@ -4,7 +4,7 @@ import Link from "next/link";
 const Contact = () => {
   return (
     <section
-      className=" text-center w-full  sm:w-[85%] m-auto my-52   p"
+      className=" text-center w-full  sm:w-[85%] m-auto  pb-52 lg:py-52 "
       id="contact"
       data-aos="fade-up"
     >
