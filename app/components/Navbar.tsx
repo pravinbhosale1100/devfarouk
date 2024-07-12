@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import { motion } from "framer-motion";
 import { sections } from "@/datas/data";
 import Link from "next/link";
 import { HiDocumentText } from "react-icons/hi";
@@ -19,7 +20,7 @@ const Navbar = () => {
     >
       <Link
         href="/"
-        className="flex justify-start sm:justify-center items-center uppercase tracking-wider "
+        className="flex justify-start sm:justify-center items-center uppercase tracking-wider"
       >
         <h1 className="text-3xl sm:text-3xl font-bold lg:text-4xl text-secondary-color-3">
           Dev
@@ -66,16 +67,19 @@ const Navbar = () => {
           <span className="line block w-full h-1 bg-black transition-transform duration-300 ease-in-out origin-center"></span>
         </button>
       </div>
-      <div
-        className={`fixed inset-0 w-full h-lvh bg-black bg-opacity-50 transition-transform transform ${
-          isOpen ? "translate-x-0" : "translate-x-full"
-        } lg:hidden`}
+      <motion.div
+        initial={{ x: "100%" }}
+        animate={{ x: isOpen ? "0%" : "100%" }}
+        transition={{ duration: 0.5 }}
+        className={`fixed inset-0 w-full h-lvh bg-black bg-opacity-50 lg:hidden`}
       >
-        <div className=" absolute top-0 right-0 h-full w-3/4 bg-white shadow-lg p-4">
-          <nav
-            className=" w-full
-           flex flex-col items-center  space-y-4 z-40 mt-36 gap-4 justify-center"
-          >
+        <motion.div
+          initial={{ x: "100%" }}
+          animate={{ x: isOpen ? "0%" : "100%" }}
+          transition={{ duration: 0.5 }}
+          className="absolute top-0 right-0 h-full w-3/4 bg-white shadow-lg p-4"
+        >
+          <nav className="w-full flex flex-col items-center space-y-4 z-40 mt-36 gap-4 justify-center">
             {sections.map((section, id) => (
               <Link
                 key={id}
@@ -97,8 +101,8 @@ const Navbar = () => {
               <HiDocumentText size={25} />
             </Link>
           </nav>
-        </div>
-      </div>
+        </motion.div>
+      </motion.div>
     </section>
   );
 };
