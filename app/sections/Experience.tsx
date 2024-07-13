@@ -1,6 +1,6 @@
 "use client";
 import { companies, companiesInfo } from "@/datas/data";
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import { RiArrowDropRightFill } from "react-icons/ri";
 import { motion, AnimatePresence } from "framer-motion";
 
@@ -8,6 +8,7 @@ const Experience = () => {
   const [tab, setTab] = useState<number>(0);
   const [direction, setDirection] = useState<string>("right");
   const [isMobile, setIsMobile] = useState<boolean>(false);
+  const containerRef = useRef<HTMLDivElement>(null);
 
   const handleTabClick = (id: number) => {
     if (id > tab) {
@@ -16,6 +17,22 @@ const Experience = () => {
       setDirection("left");
     }
     setTab(id);
+    scrollContainer(id);
+  };
+
+  const scrollContainer = (id: number) => {
+    if (containerRef.current) {
+      const container = containerRef.current;
+      const selectedTab = container.children[id] as HTMLElement;
+      const containerWidth = container.clientWidth;
+      const selectedTabOffsetLeft = selectedTab.offsetLeft;
+      const selectedTabWidth = selectedTab.clientWidth;
+
+      container.scroll({
+        left: selectedTabOffsetLeft - containerWidth / 2 + selectedTabWidth / 2,
+        behavior: "smooth",
+      });
+    }
   };
 
   const handleResize = () => {
@@ -67,13 +84,14 @@ const Experience = () => {
       <div className="flex flex-col gap-5 lg:flex-row w-full py-10 lg:gap-10 items-center">
         <div
           id="companies-scrollbar"
+          ref={containerRef}
           className="flex lg:gap-0 overflow-x-scroll lg:inline-block w-[100%] lg:w-[30%] border-b-2 border-b-[#f2f2f2] lg:border-l-[#f2f2f2] lg:border-l-2"
           style={{ backgroundImage: "url('/patterns/pattern-4.svg')" }}
         >
           {companies.map((company, id) => (
             <div
               key={id}
-              className={`min-w-52 lg:w-full cursor-pointer hover:text-secondary-color-3 hover:bg-[#FBEDDD] transition-all px-5 py-2 font-bold ${
+              className={`min-w-36 lg:w-full cursor-pointer hover:text-secondary-color-3 hover:bg-[#FBEDDD] transition-all px-5 py-2 font-bold ${
                 tab === id &&
                 "border-b-2 lg:border-b-0 lg:border-l-2 border-secondary-color-3 bg-[#FBEDDD] text-secondary-color-3"
               }`}
