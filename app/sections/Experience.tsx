@@ -73,7 +73,7 @@ const Experience = () => {
 
   return (
     <section
-      className="flex flex-col mx-0 xl:mx-[10%] lg:mx-[7%] md:mx-[7%] pt-28 lg:pt-48"
+      className="flex flex-col mx-0 xl:mx-[10%] lg:mx-[7%] md:mx-[7%] pt-28 lg:pt-48 relative"
       id="experience"
       data-aos="fade-up"
     >

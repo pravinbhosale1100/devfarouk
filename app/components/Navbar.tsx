@@ -13,13 +13,6 @@ const Navbar = () => {
     setIsOpen(!isOpen);
   };
 
-  const handleScroll = (id: string) => {
-    const section = document.getElementById(id);
-    if (section) {
-      section.scrollIntoView({ behavior: "smooth" });
-    }
-  };
-
   return (
     <section
       className="fixed top-0 h-24 flex flex-row items-center w-full shadow-sm justify-between px-5 sm:px-16 z-20 bg-[#fffbf5]"
@@ -62,11 +55,11 @@ const Navbar = () => {
           </ul>
         </nav>
       </div>
-      <div className="lg:hidden z-50">
+      <div className=" inline-block lg:hidden z-50">
         <button
-          className={`hamburger ${
+          className={`relative ${
             isOpen ? "open" : ""
-          } relative z-30 w-8 h-6 flex flex-col justify-between items-center`}
+          }  z-30 w-8 h-6 flex flex-col justify-between items-center`}
           onClick={toggleMenu}
         >
           <span className="line block w-full h-1 bg-black transition-transform duration-300 ease-in-out origin-center"></span>

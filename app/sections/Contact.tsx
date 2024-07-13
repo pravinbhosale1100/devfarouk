@@ -1,3 +1,4 @@
+import { socialLinks } from "@/datas/data";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -39,6 +40,27 @@ const Contact = () => {
           />{" "}
         </Link>
       </div>
+      <ul className="flex flex-row md:hidden justify-center gap-4 mt-10 items-center">
+        {socialLinks.map((socialLink, id) => (
+          <li
+            key={id}
+            className={`grayscale hover:grayscale-0 flex items-center cursor-pointer gap-5`}
+          >
+            <Link
+              href={socialLink.link}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img
+                src={socialLink.simpleIcon}
+                alt={socialLink.name}
+                height={20}
+                width={20}
+              />
+            </Link>
+          </li>
+        ))}
+      </ul>
     </section>
   );
 };
