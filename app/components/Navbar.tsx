@@ -55,11 +55,11 @@ const Navbar = () => {
           </ul>
         </nav>
       </div>
-      <div className=" inline-block lg:hidden z-50">
+      <div className="lg:hidden z-50">
         <button
-          className={`relative ${
+          className={`hamburger ${
             isOpen ? "open" : ""
-          }  z-30 w-8 h-6 flex flex-col justify-between items-center`}
+          } relative z-30 w-8 h-6 flex flex-col justify-between items-center`}
           onClick={toggleMenu}
         >
           <span className="line block w-full h-1 bg-black transition-transform duration-300 ease-in-out origin-center"></span>
