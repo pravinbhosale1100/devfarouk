@@ -4,6 +4,7 @@ import "./globals.css";
 import Navbar from "./components/Navbar";
 import Sidebar from "./components/Sidebar";
 import Copyright from "./sections/Copyright";
+import SplashScreenManager from "./components/SplashScreenManager";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -20,10 +21,12 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <body className={`${inter.className} `}>
-        <Navbar />
-        <Sidebar />
-        <main className=" px-5 sm:px-12">{children}</main>
-        <Copyright />
+        <SplashScreenManager>
+          <Navbar />
+          <Sidebar />
+          <main className=" px-5 sm:px-12">{children}</main>
+          <Copyright />
+        </SplashScreenManager>
       </body>
     </html>
   );
