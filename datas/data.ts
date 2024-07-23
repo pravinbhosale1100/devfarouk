@@ -144,6 +144,7 @@ export const projects = [
     description:
       "A Gwift web app is a progressive ridesharing application with real-time tracking, seamless geocoordinate integration, and a user-friendly interface, prioritizing smooth navigation and efficient API consumption.",
     image: "/gswift.webp",
+    // liveLink: "https://go-project-ashy.vercel.app/",
     stacks: ["TypeScript", "React", "TailwindCss"],
   },
   {

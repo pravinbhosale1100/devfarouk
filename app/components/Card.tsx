@@ -84,6 +84,8 @@ const Card = ({
           {liveLink && (
             <Link
               href={liveLink}
+              target="_blank"
+              rel="noopener noreferrer"
               className={`mt-2 flex justify-normal ${
                 isEven ? " lg:justify-end" : " lg:justify-start"
               }`}
@@ -94,6 +96,8 @@ const Card = ({
           {githubLink && (
             <Link
               href={githubLink}
+              target="_blank"
+              rel="noopener noreferrer"
               className={`mt-2 flex justify-normal ${
                 isEven ? " lg:justify-end" : " lg:justify-start"
               }`}
