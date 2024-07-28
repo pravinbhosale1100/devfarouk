@@ -74,7 +74,7 @@ export const companies = [
 
 export const companiesInfo = [
   {
-    title: "Frontend Engineer",
+    title: "Lead Frontend Engineer",
     company: "Pathpalz",
     location: "Uk(remote)",
     duration: "February 2023 - June 2024",
