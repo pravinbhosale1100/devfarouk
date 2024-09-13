@@ -2,6 +2,7 @@ import { projects } from "@/datas/data";
 import Card from "../components/Card";
 import Link from "next/link";
 import { IoArrowForward } from "react-icons/io5";
+import { Button } from "@/components/ui/button";
 
 const Works = () => {
   return (
@@ -35,16 +36,18 @@ const Works = () => {
               )
           )}
         <div className="flex justify-center items-center">
-          <Link
-            href={"/works"}
-            className=" flex text-black font-bold border-b border-transparent hover:border-black transition-all "
-          >
-            <span className="">View All Projects</span>
+          <Button asChild variant={"link"}>
+            <Link
+              href={"/works"}
+              className=" flex font-bold border-b border-transparent  transition-all "
+            >
+              <span className="">View All Projects</span>
 
-            <span>
-              <IoArrowForward size={20} className=" text-secondary-color-3" />
-            </span>
-          </Link>
+              <span>
+                <IoArrowForward size={20} className=" text-secondary-color-3" />
+              </span>
+            </Link>
+          </Button>
         </div>
       </div>
     </section>
