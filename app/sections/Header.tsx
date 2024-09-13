@@ -13,19 +13,12 @@ const Header = () => {
           <h1 className=" font-bold  text-6xl md:text-7xl">Farouk Mustapha</h1>
         </div>
         <div className="relative">
-          <h2 className=" py-1 px-2 bg-[#FBEDDD] font-medium text-secondary-color-3 w-max rounded-md text-xl">
-            A Front-end Developer
-          </h2>
-          <h2 className="text-black text-2xl sm:text-3xl font-bold mt-4">
-            I <span className=" text-secondary-color-3 font-bold ">d</span>
-            <span className="text-black font-bold">esign</span> &{" "}
-            <span className=" text-secondary-color-3 font-bold">d</span>
-            <span className="text-black font-bold">evelop</span> WebApps
+          <h2 className=" py-1 px-2 bg-[#FBEDDD] font-medium text-secondary-color-3 w-max rounded-md text-xl font-Courgette">
+            A Front-end Engineer
           </h2>
           <p className="mt-2">
-            I love turning designs and ideas into cool web experiences, and work
-            closely with Product designers and backend developers to bring these
-            ideas to life.
+            I specialize in building WebApps using React, Next.js, and
+            TypeScript, turning designs into engaging web experiences.
           </p>
         </div>
         <Link

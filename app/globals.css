@@ -33,10 +33,8 @@
 }
 
 @tailwind utilities;
-@import url("https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
-/* @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Rubik+Mono+One&display=swap"); */
 @import url("https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Courgette&display=swap");
 
 :root {
   --foreground-hex: black;
@@ -48,16 +46,15 @@
   :root {
     --foreground-hex: black;
     --background-start-hex: #ffe1cc;
+    /* --background-end-hex: #fff; */
+
     --background-end-hex: #fffbf5;
-    /* --background-end-hex: "#fff"; */
   }
 }
 
 * {
   letter-spacing: 1px;
   word-spacing: 2px;
-  font-family: "Hind Siliguri", sans-serif;
-  font-weight: 300;
   font-style: normal;
 }
 

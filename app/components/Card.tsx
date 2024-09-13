@@ -62,7 +62,7 @@ const Card = ({
           isEven ? "lg:order-2 lg:text-right" : "lg:order-1 lg:text-left"
         }`}
       >
-        <h6 className="text-lg text-secondary-color-3 font-bold">{type}</h6>
+        <h6 className="text-lg text-secondary-color-3 font-semibold">{type}</h6>
         <h1 className=" text-2xl mt-2 font-bold ">{name}</h1>
         <div
           className={`  px-0 py-0 lg:px-5 lg:py-7 bg-[#FBEDDD] mr-0 ml-0 ${
@@ -71,7 +71,7 @@ const Card = ({
         >
           {description}
         </div>
-        <div className=" px-0 lg:text-left mt-2 lg:px-2 flex gap-2 text-secondary-color-3 font-bold flex-wrap">
+        <div className=" px-0 lg:text-left mt-2 lg:px-2 flex gap-2 text-secondary-color-3 font-semibold flex-wrap">
           {stacks.map((stack) => (
             <span>{stack}</span>
           ))}

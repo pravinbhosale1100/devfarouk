@@ -86,7 +86,7 @@ export const companiesInfo = [
   },
   {
     title: "Frontend Engineer",
-    company: "Beerystamp",
+    company: "Berrystamp",
     location: "Lagos, Nigeria",
     duration: "October 2023 - February 2024",
     roles: [

@@ -27,9 +27,7 @@ const config: Config = {
         "tertiary-color-2": "#002e4d",
       },
       fontFamily: {
-        inter: ["Inter", "sans-serif"],
-        poppins: ["Poppins", "sans-serif"],
-        Rubik: ["Rubik Mono One", "monospace"],
+        Courgette: ["Courgette", "cursive"],
       },
     },
   },

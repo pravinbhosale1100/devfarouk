@@ -35,13 +35,17 @@ const About = () => {
           <article>
             Farouk Mustapha is a Frontend Developer based in Lagos, Nigeria,
             with 2 years of experience in the field. I have developed web
-            applications using JavaScript and TypeScript. Over this period, I
-            have worked and interned at startups and companies such as Pathpalz,
-            Berrystamp, and JustDoStartUp. <br />
-            <br />I have contributed to numerous projects, collaborating with
-            product designers, backend developers, DevOps, and other tech
-            professionals. I have a strong passion for learning and teaching,
-            and am always updated with the latest advancements in technology.
+            applications using JavaScript and TypeScript.I love turning designs
+            and ideas into cool web experiences, and work closely with Product
+            designers and backend developers to bring these ideas to life.I have
+            contributed to numerous projects, collaborating with product
+            designers, backend developers, DevOps, and other tech professionals.{" "}
+            <br />
+            <br />
+            Over this period, I have worked and interned at startups and
+            companies such as Pathpalz, Berrystamp, and JustDoStartUp. I have a
+            strong passion for learning and teaching, and am always updated with
+            the latest advancements in technology.
           </article>
         </div>
       </div>
