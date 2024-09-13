@@ -85,7 +85,7 @@ const Experience = () => {
         <div
           id="companies-scrollbar"
           ref={containerRef}
-          className="flex lg:gap-0 overflow-x-scroll lg:inline-block w-[100%] lg:w-[30%] border-b-2 border-b-[#f2f2f2] lg:border-l-[#f2f2f2] lg:border-l-2"
+          className="flex lg:gap-0 overflow-x-scroll lg:inline-block w-[100%] lg:w-[30%] lg:border-l-[#f2f2f2] lg:border-l-2"
           style={{ backgroundImage: "url('/patterns/pattern-4.svg')" }}
         >
           {companies.map((company, id) => (
@@ -93,7 +93,7 @@ const Experience = () => {
               key={id}
               className={`min-w-36 lg:w-full cursor-pointer hover:text-secondary-color-3 hover:bg-[#FBEDDD] transition-all px-5 py-2 font-bold ${
                 tab === id &&
-                "border-b-2 lg:border-b-0 lg:border-l-2 border-secondary-color-3 bg-[#FBEDDD] text-secondary-color-3"
+                " lg:border-l-2 border-secondary-color-3 bg-[#FBEDDD] text-secondary-color-3"
               }`}
               onClick={() => handleTabClick(id)}
             >

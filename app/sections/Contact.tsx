@@ -1,3 +1,4 @@
+import { Button } from "@/components/ui/button";
 import { socialLinks } from "@/datas/data";
 import Image from "next/image";
 import Link from "next/link";
@@ -27,18 +28,20 @@ const Contact = () => {
           </Link>
           .
         </p>
-        <Link
-          href={"mailto:your.mustaphafarouk41@gmail.com"}
-          className=" text-base flex items-center justify-center gap-3 px-5 py-2  font-bold w-max  mt-5   border-[1px] hover:bg-[#FBEDDD]  transition-all border-black rounded-lg"
-        >
-          Send A Message
-          <Image
-            alt="message"
-            src={"/svgs/message-programming.svg"}
-            width={25}
-            height={25}
-          />{" "}
-        </Link>
+        <Button asChild variant={"outline"}>
+          <Link
+            href={"mailto:your.mustaphafarouk41@gmail.com"}
+            className=" text-base flex items-center justify-center gap-3 px-5 py-2  font-bold w-max  mt-5   border-[1px] hover:bg-[#FBEDDD]  transition-all border-black rounded-lg"
+          >
+            Send A Message
+            <Image
+              alt="message"
+              src={"/svgs/message-programming.svg"}
+              width={25}
+              height={25}
+            />{" "}
+          </Link>
+        </Button>
       </div>
       <ul className="flex flex-row md:hidden justify-center gap-4 mt-10 items-center">
         {socialLinks.map((socialLink, id) => (

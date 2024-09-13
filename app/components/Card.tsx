@@ -58,14 +58,14 @@ const Card = ({
       </div>
 
       <div
-        className={` relative z-10 bg-[#FBEDDD] p-4 lg:p-0 w-full sm:w-[90%] lg:w-[40%]  lg:bg-transparent lg:rounded-none rounded-b-lg ${
+        className={` relative z-10 p-4 lg:p-0 w-full sm:w-[90%] lg:w-[40%]  lg:bg-transparent lg:rounded-none rounded-b-lg ${
           isEven ? "lg:order-2 lg:text-right" : "lg:order-1 lg:text-left"
         }`}
       >
         <h6 className="text-lg text-secondary-color-3 font-semibold">{type}</h6>
         <h1 className=" text-2xl mt-2 font-bold ">{name}</h1>
         <div
-          className={`  px-0 py-0 lg:px-5 lg:py-7 bg-[#FBEDDD] mr-0 ml-0 ${
+          className={`  px-0 py-0 lg:px-5 lg:py-7 bg-[#FBEDDD] dark:text-primary-color mr-0 ml-0 ${
             isEven ? "lg:-ml-16" : "lg:-mr-16"
           }  mt-2 rounded-md relative`}
         >

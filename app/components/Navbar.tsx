@@ -5,6 +5,8 @@ import { motion } from "framer-motion";
 import { sections } from "@/datas/data";
 import Link from "next/link";
 import { HiDocumentText } from "react-icons/hi";
+import { Button } from "@/components/ui/button";
+import { ThemeSwitcher } from "./ThemeSwitch";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -15,7 +17,7 @@ const Navbar = () => {
 
   return (
     <section
-      className="fixed top-0 h-24 flex flex-row items-center w-full shadow-sm justify-between px-5 sm:px-16 z-20 bg-[#fffbf5]"
+      className="fixed top-0 h-24 flex flex-row items-center w-full shadow-sm justify-between px-5 sm:px-16 z-20  dark:bg-black bg-white"
       data-aos="fade-down"
     >
       <Link
@@ -27,33 +29,37 @@ const Navbar = () => {
         </h1>
         <p className="text-xl sm:text-2xl lg:text-2xl font-extrabold">Farouk</p>
       </Link>
-      <div className="hidden md:inline-block">
+      <div className="hidden md:flex items-center gap-2 ">
         <nav className="w-full flex flex-row justify-between items-center">
-          <ul className="w-full flex flex-row justify-start items-center font-medium text-lg gap-8">
+          <ul className="w-full flex flex-row justify-start items-center font-medium text-lg gap-4">
             {sections.map((section, id) => (
-              <li key={id} className="hidden lg:inline-block">
-                <Link
-                  key={id}
-                  href={section.idRoute}
-                  className="border-b border-transparent hover:border-black transition-all"
-                >
+              <Button
+                variant={"link"}
+                key={id}
+                className="hidden lg:inline-block"
+                asChild
+              >
+                <Link key={id} href={section.idRoute} className="">
                   {section.name}
                 </Link>
-              </li>
+              </Button>
             ))}
             <li className="hidden lg:inline-block">
-              <Link
-                href="https://docs.google.com/document/d/1bp5RxbPMA8RHlcUGZIOXIKQ8I1wzLx3MvOQLXVlf8SQ/edit?usp=sharing"
-                className="flex items-center justify-center gap-3 px-5 py-2 font-b w-max border-[1px] hover:bg-[#FBEDDD] transition-all border-black rounded-lg"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                View Resume
-                <HiDocumentText size={25} />
-              </Link>
+              <Button asChild variant={"outline"}>
+                <Link
+                  href="https://docs.google.com/document/d/1bp5RxbPMA8RHlcUGZIOXIKQ8I1wzLx3MvOQLXVlf8SQ/edit?usp=sharing"
+                  className=" border-[1px] border-black"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  View Resume
+                  <HiDocumentText size={25} className="ml-2" />
+                </Link>
+              </Button>
             </li>
           </ul>
         </nav>
+        <ThemeSwitcher />
       </div>
       <div className="lg:hidden z-50">
         <button
@@ -81,25 +87,29 @@ const Navbar = () => {
         >
           <nav className="w-full flex flex-col items-center space-y-4 z-40 mt-36 gap-4 justify-center">
             {sections.map((section, id) => (
+              <Button variant={"link"} key={id} className="" asChild>
+                <Link
+                  key={id}
+                  href={section.idRoute}
+                  className=""
+                  onClick={toggleMenu}
+                >
+                  {section.name}
+                </Link>
+              </Button>
+            ))}
+            <Button asChild variant={"outline"}>
               <Link
-                key={id}
-                href={section.idRoute}
-                className="text-black font-medium text-lg"
+                href="https://docs.google.com/document/d/1bp5RxbPMA8RHlcUGZIOXIKQ8I1wzLx3MvOQLXVlf8SQ/edit?usp=sharing"
+                className=""
+                target="_blank"
+                rel="noopener noreferrer"
                 onClick={toggleMenu}
               >
-                {section.name}
+                View Resume
+                <HiDocumentText size={25} />
               </Link>
-            ))}
-            <Link
-              href="https://docs.google.com/document/d/1bp5RxbPMA8RHlcUGZIOXIKQ8I1wzLx3MvOQLXVlf8SQ/edit?usp=sharing"
-              className="flex items-center justify-center gap-3 px-5 py-2 font-b w-max border-[1px] hover:bg-[#FBEDDD] transition-all border-black rounded-lg"
-              target="_blank"
-              rel="noopener noreferrer"
-              onClick={toggleMenu}
-            >
-              View Resume
-              <HiDocumentText size={25} />
-            </Link>
+            </Button>
           </nav>
         </motion.div>
       </motion.div>

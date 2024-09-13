@@ -18,12 +18,13 @@ const About = () => {
           <div style={{ backgroundImage: "url('/patterns/pattern-4.svg')" }}>
             <ul className="px-8 py-8 flex flex-row  h-auto sm:flex-col gap-4 sm:h-80 lg:gap-2 lg:h-72  flex-wrap w-full">
               {technologies.map((tech) => (
-                <li className="  grayscale hover:grayscale-0 flex items-center cursor-pointer gap-5">
+                <li className="flex filter grayscale hover:grayscale-0  items-center cursor-pointer gap-5 transition-all duration-300 dark:filter dark:brightness-50 dark:invert hover:dark:brightness-100 hover:dark:invert-0">
                   <img
                     src={tech.iconLink}
                     alt={tech.name}
                     height={50}
                     width={50}
+                    className=""
                   />
                   <span className="hidden sm:inline-block">{tech.name}</span>
                 </li>

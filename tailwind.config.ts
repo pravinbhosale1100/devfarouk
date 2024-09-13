@@ -17,20 +17,22 @@ const config: Config = {
       colors: {
         "primary-color": "#4d1f00",
         "border-color": "#FBEDDD",
-
         "secondary-color": "#ffe1cc",
         "secondary-color-2": "#F2CA99",
-        // "secondary-color-3": "#ff8b3d",
         "secondary-color-3": "#E88D67",
-
         "tertiary-color": "#b3e0ff",
         "tertiary-color-2": "#002e4d",
       },
       fontFamily: {
         Courgette: ["Courgette", "cursive"],
       },
+      borderRadius: {
+        lg: "var(--radius)",
+        md: "calc(var(--radius) - 2px)",
+        sm: "calc(var(--radius) - 4px)",
+      },
     },
   },
-  plugins: [],
+  plugins: [require("tailwindcss-animate")],
 };
 export default config;

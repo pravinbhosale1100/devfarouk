@@ -5,13 +5,9 @@ import Navbar from "./components/Navbar";
 import Sidebar from "./components/Sidebar";
 import Copyright from "./sections/Copyright";
 import SplashScreenManager from "./components/SplashScreenManager";
+import { Providers } from "./providers";
 
 export const inter = Inter({
-  subsets: ["latin"],
-  display: "swap",
-});
-
-export const roboto_mono = Roboto_Mono({
   subsets: ["latin"],
   display: "swap",
 });
@@ -29,12 +25,14 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <body className={`${inter.className} `}>
-        <SplashScreenManager>
-          <Navbar />
-          <Sidebar />
-          <main className=" px-5 sm:px-12">{children}</main>
-          <Copyright />
-        </SplashScreenManager>
+        <Providers>
+          <SplashScreenManager>
+            <Navbar />
+            <Sidebar />
+            <main className=" px-5 sm:px-12">{children}</main>
+            <Copyright />
+          </SplashScreenManager>
+        </Providers>
       </body>
     </html>
   );
