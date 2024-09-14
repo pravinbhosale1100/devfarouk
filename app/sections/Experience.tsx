@@ -91,9 +91,9 @@ const Experience = () => {
           {companies.map((company, id) => (
             <div
               key={id}
-              className={`min-w-36 lg:w-full cursor-pointer hover:text-secondary-color-3 hover:bg-[#FBEDDD] transition-all px-5 py-2 font-bold ${
+              className={`lg:w-full cursor-pointer hover:text-primary-color hover:bg-[#FBEDDD] transition-all px-5 py-2 font-bold ${
                 tab === id &&
-                " lg:border-l-2 border-secondary-color-3 bg-[#FBEDDD] text-secondary-color-3"
+                " lg:border-l-2 border-secondary-color-3 bg-[#FBEDDD] text-primary-color"
               }`}
               onClick={() => handleTabClick(id)}
             >

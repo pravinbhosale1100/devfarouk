@@ -68,9 +68,9 @@ const Navbar = () => {
           } relative z-30 w-8 h-6 flex flex-col justify-between items-center`}
           onClick={toggleMenu}
         >
-          <span className="line block w-full h-1 bg-black transition-transform duration-300 ease-in-out origin-center"></span>
-          <span className="line block w-full h-1 bg-secondary-color-3 transition-opacity duration-300 ease-in-out"></span>
-          <span className="line block w-full h-1 bg-black transition-transform duration-300 ease-in-out origin-center"></span>
+          <span className="line block w-full h-1 dark:bg-secondary-color-3 bg-black transition-transform duration-300 ease-in-out origin-center"></span>
+          <span className="line block w-full h-1 dark:bg-secondary-color-3 bg-black transition-opacity duration-300 ease-in-out"></span>
+          <span className="line block w-full h-1 dark:bg-secondary-color-3 bg-black transition-transform duration-300 ease-in-out origin-center"></span>
         </button>
       </div>
       <motion.div
@@ -85,13 +85,13 @@ const Navbar = () => {
           transition={{ duration: 0.5 }}
           className="absolute top-0 right-0 h-full w-3/4 bg-white shadow-lg p-4"
         >
-          <nav className="w-full flex flex-col items-center space-y-4 z-40 mt-36 gap-4 justify-center">
+          <nav className="w-full flex flex-col items-center  z-40 mt-36 gap-4 justify-center">
             {sections.map((section, id) => (
-              <Button variant={"link"} key={id} className="" asChild>
+              <Button variant={"link"} key={id} asChild>
                 <Link
                   key={id}
                   href={section.idRoute}
-                  className=""
+                  className=" dark:text-primary-color"
                   onClick={toggleMenu}
                 >
                   {section.name}

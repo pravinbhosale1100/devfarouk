@@ -5,7 +5,7 @@ import Link from "next/link";
 
 const Header = () => {
   return (
-    <header className="flex flex-col lg:flex-row justify-between mx-0 my-24 items-center pt-8 lg:pt-24 bg-center xl:mx-[10%] lg:mx-[7%] md:mx-[7%] ">
+    <header className="flex flex-col lg:flex-row justify-between mx-0 my-24 items-center pt-20 lg:pt-24 bg-center xl:mx-[10%] lg:mx-[7%] md:mx-[7%] ">
       <section
         className=" w-full  xl:w-[70%] relative pb-10   flex flex-col gap-4 lg:w-[70%]"
         data-aos="fade-right"
