@@ -39,6 +39,7 @@
 :root {
   --foreground-hex: black;
   --background-end-hex: #fff;
+  scroll-behavior: smooth;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -52,6 +53,10 @@
   letter-spacing: 1px;
   word-spacing: 2px;
   font-style: normal;
+}
+
+#root {
+  scroll-behavior: smooth;
 }
 
 body {
