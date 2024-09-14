@@ -110,6 +110,7 @@ const Navbar = () => {
                 <HiDocumentText size={25} />
               </Link>
             </Button>
+            <ThemeSwitcher />
           </nav>
         </motion.div>
       </motion.div>
