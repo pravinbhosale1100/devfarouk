@@ -5,32 +5,23 @@ import { Moon, Sun } from "lucide-react";
 import { useTheme } from "next-themes";
 
 import { Button } from "@/components/ui/button";
-import {
-  DropdownMenu,
-  DropdownMenuContent,
-  DropdownMenuItem,
-  DropdownMenuTrigger,
-} from "@/components/ui/dropdown-menu";
 
 export function ThemeSwitcher() {
-  const { setTheme } = useTheme();
+  const { theme, setTheme } = useTheme();
+
+  const toggleTheme = () => {
+    setTheme(theme === "light" ? "dark" : "light");
+  };
 
   return (
-    <DropdownMenu>
-      <DropdownMenuTrigger asChild>
-        <Button variant="link" size="icon" className="relative w-6 h-6">
-          <Sun className="h-full w-full transition-opacity duration-300 opacity-100 dark:opacity-0 dark:fill-primary-color" />
-          <Moon className="absolute h-full w-full transition-opacity duration-300 opacity-0 dark:opacity-100 dark:fill-primary-color" />
-        </Button>
-      </DropdownMenuTrigger>
-      <DropdownMenuContent align="end">
-        <DropdownMenuItem onClick={() => setTheme("light")}>
-          Light
-        </DropdownMenuItem>
-        <DropdownMenuItem onClick={() => setTheme("dark")}>
-          Dark
-        </DropdownMenuItem>
-      </DropdownMenuContent>
-    </DropdownMenu>
+    <Button
+      variant="link"
+      size="icon"
+      className="relative w-6 h-6"
+      onClick={toggleTheme}
+    >
+      <Sun className="h-full w-full transition-opacity duration-300 opacity-100 dark:opacity-0 dark:fill-primary-color" />
+      <Moon className="absolute h-full w-full transition-opacity duration-300 opacity-0 dark:opacity-100 dark:fill-primary-color" />
+    </Button>
   );
 }
