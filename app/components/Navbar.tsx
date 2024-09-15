@@ -27,7 +27,11 @@ const Navbar = () => {
         <h1 className="text-3xl sm:text-3xl font-bold lg:text-4xl text-secondary-color-3">
           Dev
         </h1>
-        <p className="text-xl sm:text-2xl lg:text-2xl font-extrabold">Farouk</p>
+        <p className="text-xl sm:text-2xl lg:text-2xl font-extrabold">
+          Far
+          <ThemeSwitcher />
+          uk
+        </p>
       </Link>
       <div className="hidden md:flex items-center gap-2 ">
         <nav className="w-full flex flex-row justify-between items-center">
@@ -59,7 +63,6 @@ const Navbar = () => {
             </li>
           </ul>
         </nav>
-        <ThemeSwitcher />
       </div>
       <div className="lg:hidden z-50">
         <button
