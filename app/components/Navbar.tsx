@@ -17,7 +17,7 @@ const Navbar = () => {
 
   return (
     <section
-      className="fixed top-0 h-24 flex flex-row items-center w-full shadow-sm justify-between px-5 sm:px-16 z-20  dark:bg-black bg-white"
+      className="fixed top-0 h-24 flex flex-row items-center w-full shadow-sm justify-between px-2 sm:px-16 z-20 backdrop-blur-lg"
       data-aos="fade-down"
     >
       <Link
@@ -34,7 +34,7 @@ const Navbar = () => {
         </p>
       </Link>
       <div className="hidden md:flex items-center gap-2 ">
-        <nav className="w-full flex flex-row justify-between items-center">
+        <nav className="w-full flex flex-row items-center">
           <ul className="w-full flex flex-row justify-start items-center font-medium text-lg gap-4">
             {sections.map((section, id) => (
               <Button
