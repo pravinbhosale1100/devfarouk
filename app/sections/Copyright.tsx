@@ -14,7 +14,7 @@ const Copyright = () => {
           {" "}
           devfarouk 👨‍💻
         </Link>{" "}
-        (Inspirations from{" "}
+        (Inspirations from
         <Link
           href={"https://www.geekmaros.dev/"}
           className=" font-bold"

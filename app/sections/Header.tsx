@@ -23,6 +23,8 @@ const Header = () => {
         </div>
         <Button asChild variant={"outline"}>
           <Link
+            target="_blank"
+            rel="noopener noreferrer"
             href={"mailto:your.mustaphafarouk41@gmail.com"}
             className="flex items-center border-black justify-center gap-3 px-5 py-2  font-bold w-max  border-[1px]  mt-5 "
           >

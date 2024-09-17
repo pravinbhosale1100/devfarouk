@@ -30,6 +30,8 @@ const Contact = () => {
         </p>
         <Button asChild variant={"outline"}>
           <Link
+            target="_blank"
+            rel="noopener noreferrer"
             href={"mailto:your.mustaphafarouk41@gmail.com"}
             className=" text-base flex items-center justify-center gap-3 px-5 py-2  font-bold w-max  mt-5   border-[1px] hover:bg-[#FBEDDD]  transition-all border-black rounded-lg"
           >
@@ -45,10 +47,7 @@ const Contact = () => {
       </div>
       <ul className="flex flex-row md:hidden justify-center gap-4 mt-10 items-center">
         {socialLinks.map((socialLink, id) => (
-          <li
-            key={id}
-            className={`grayscale hover:grayscale-0 flex items-center cursor-pointer gap-5`}
-          >
+          <li key={id} className={`flex items-center cursor-pointer gap-5`}>
             <Link
               href={socialLink.link}
               target="_blank"
@@ -59,6 +58,7 @@ const Contact = () => {
                 alt={socialLink.name}
                 height={20}
                 width={20}
+                className="transition-all duration-300 filter grayscale dark:grayscale-0 hover:grayscale-0 dark:filter dark:brightness-0 dark:invert hover:dark:brightness-100 hover:dark:invert-0"
               />
             </Link>
           </li>
