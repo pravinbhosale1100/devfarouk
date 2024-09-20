@@ -154,7 +154,7 @@ export const projects = [
       "For the DeepFocustt project, I developed and integrated animations by incorporating full HTML code, including CSS, JavaScript, and additional packages, to create a dynamic and engaging user experience on their Wix platform",
     image: "/deepfocus.webp",
     liveLink: "https://www.deepfocustt.com/",
-    stacks: ["Wix", "Css", "Html", "Gsap", "Framer Motion"],
+    stacks: ["Wix", "Css", "Html", "Gsap"],
   },
   {
     name: "Huntstore",
