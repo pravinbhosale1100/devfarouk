@@ -1,6 +1,5 @@
 import { FaArrowUpRightFromSquare } from "react-icons/fa6";
 import Link from "next/link";
-import { useMediaQuery } from "react-responsive";
 
 interface CardProps {
   id: number;
@@ -23,7 +22,6 @@ const Card = ({
   githubLink,
   stacks,
 }: CardProps) => {
-  const isMobile = useMediaQuery({ query: "(max-width: 768px)" });
   const isEven = id % 2 === 0;
   return (
     <section
@@ -96,9 +94,7 @@ const Card = ({
             >
               <FaArrowUpRightFromSquare
                 size={20}
-                className={` ${
-                  isMobile ? "dark:text-black" : "text-secondary-color-3"
-                } dark:text-secondary-color-3`}
+                className={` text-black dark:text-secondary-color-3`}
               />
             </Link>
           )}
