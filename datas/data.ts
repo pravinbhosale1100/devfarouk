@@ -147,15 +147,15 @@ export const projects = [
     liveLink: "https://gswift.pathpalz.com/",
     stacks: ["TypeScript", "React", "TailwindCss"],
   },
-  {
-    name: "DeepFocustt",
-    type: "Featured Project",
-    description:
-      "For the DeepFocustt project, I developed and integrated animations by incorporating full HTML code, including CSS, JavaScript, and additional packages, to create a dynamic and engaging user experience on their Wix platform",
-    image: "/deepfocus.webp",
-    liveLink: "https://www.deepfocustt.com/",
-    stacks: ["Wix", "Css", "Html", "Gsap"],
-  },
+  // {
+  //   name: "DeepFocustt",
+  //   type: "Featured Project",
+  //   description:
+  //     "For the DeepFocustt project, I developed and integrated animations by incorporating full HTML code, including CSS, JavaScript, and additional packages, to create a dynamic and engaging user experience on their Wix platform",
+  //   image: "/deepfocus.webp",
+  //   liveLink: "https://www.deepfocustt.com/",
+  //   stacks: ["Wix", "Css", "Html", "Gsap"],
+  // },
   {
     name: "Huntstore",
     type: "Personal Project",
