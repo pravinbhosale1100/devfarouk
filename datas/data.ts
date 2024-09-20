@@ -144,8 +144,17 @@ export const projects = [
     description:
       "A Gwift web app is a progressive ridesharing application with real-time tracking, seamless geocoordinate integration, and a user-friendly interface, prioritizing smooth navigation and efficient API consumption.",
     image: "/gswift.webp",
-    // liveLink: "https://go-project-ashy.vercel.app/",
+    liveLink: "https://gswift.pathpalz.com/",
     stacks: ["TypeScript", "React", "TailwindCss"],
+  },
+  {
+    name: "DeepFocustt",
+    type: "Featured Project",
+    description:
+      "For the DeepFocustt project, I developed and integrated animations by incorporating full HTML code, including CSS, JavaScript, and additional packages, to create a dynamic and engaging user experience on their Wix platform",
+    image: "/deepfocus.webp",
+    liveLink: "https://www.deepfocustt.com/",
+    stacks: ["Wix", "Css", "Html", "Gsap", "Framer Motion"],
   },
   {
     name: "Huntstore",
