@@ -75,7 +75,7 @@ const Card = ({
         >
           {description}
         </div>
-        <div className=" px-0 lg:text-left mt-2 lg:px-2 flex gap-2 text-secondary-color-3 font-semibold flex-wrap font-idgrotesk">
+        <div className=" px-0 lg:text-left mt-2 lg:px-2 flex gap-2 text-secondary-color-3 font-medium flex-wrap font-idgrotesk">
           {stacks.map((stack) => (
             <span>{stack}</span>
           ))}

@@ -67,7 +67,6 @@ body {
   margin: 0;
   box-sizing: border-box;
 }
-/* cinzel-latin-wght-normal */
 
 .hamburger.open .line:nth-child(1) {
   transform: translateY(10px) rotate(45deg);

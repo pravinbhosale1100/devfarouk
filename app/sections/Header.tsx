@@ -19,7 +19,7 @@ const Header = () => {
         <div className="relative">
           <Badge
             variant={"secondary"}
-            className=" font-idgrotesk text-bases sm:text-xl"
+            className=" font-grotesk text-bases sm:text-xl"
           >
             A Front-end Engineer
           </Badge>
