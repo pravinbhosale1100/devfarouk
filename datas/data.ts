@@ -77,7 +77,7 @@ export const companiesInfo = [
     title: "Lead Frontend Engineer",
     company: "Pathpalz",
     location: "Uk(remote)",
-    duration: "February 2023 - June 2024",
+    duration: "February 2023 - September 2024",
     roles: [
       "Implemented real-time tracking features for users to locate nearby commuters and accurately estimate arrival times, leveraging React tools and Tailwind CSS for enhanced styling",
       "Developed a ridesharing progressive web application using TypeScript and React, with seamless backend integration of geocoordinate data",
@@ -139,6 +139,15 @@ export const projects = [
     stacks: ["TypeScript", "React", "TailwindCss", "Redux"],
   },
   {
+    name: "BFN",
+    type: "Featured Project",
+    description:
+      "Developed a microsite for the BFN initiative, collaborating closely with content writers to create a visually appealing and intuitive platform. The site is designed with a focus on user experience, utilizing a clean and modern layout.",
+    image: "/bfn.webp",
+    liveLink: "https://www.programs-bfn.ca/",
+    stacks: ["TypeScript", "React", "TailwindCss", "AOS"],
+  },
+  {
     name: "GSwift",
     type: "Featured Project",
     description:
@@ -147,6 +156,7 @@ export const projects = [
     liveLink: "https://gswift.pathpalz.com/",
     stacks: ["TypeScript", "React", "TailwindCss"],
   },
+
   {
     name: "DeepFocustt",
     type: "Featured Project",

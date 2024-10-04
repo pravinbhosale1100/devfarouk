@@ -25,6 +25,8 @@ const config: Config = {
       },
       fontFamily: {
         Courgette: ["Courgette", "cursive"],
+        grotesk: ["ID Grotesk", "sans-serif"],
+        idgrotesk: ["ID Grotesk Trial", "sans-serif"],
       },
       borderRadius: {
         lg: "var(--radius)",

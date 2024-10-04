@@ -22,18 +22,18 @@ const Navbar = () => {
     >
       <Link
         href="/"
-        className="flex justify-start sm:justify-center items-center uppercase tracking-wider"
+        className="flex justify-start sm:justify-center items-center  uppercase tracking-wider"
       >
-        <h1 className="text-3xl sm:text-3xl font-bold lg:text-4xl text-secondary-color-3">
+        <h1 className="text-3xl sm:text-3xl font-bold lg:text-4xl text-secondary-color-3 font-idgrotesk">
           Dev
         </h1>
-        <p className="text-xl sm:text-2xl lg:text-2xl font-extrabold">
+        <p className="text-xl sm:text-2xl lg:text-2xl font-extrabold font-grotesk">
           Far
           <ThemeSwitcher />
           uk
         </p>
       </Link>
-      <div className="hidden md:flex items-center gap-2 ">
+      <div className="hidden md:flex items-center gap-2  font-idgrotesk uppercase">
         <nav className="w-full flex flex-row items-center">
           <ul className="w-full flex flex-row justify-start items-center font-medium text-lg gap-4">
             {sections.map((section, id) => (

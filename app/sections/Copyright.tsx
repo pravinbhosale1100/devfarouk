@@ -7,14 +7,14 @@ const Copyright = () => {
         Designed by
         <Link
           href={"https://github.com/Farouk-ayo/devfarouk"}
-          className=" text-secondary-color-3   font-bold"
+          className=" text-secondary-color-3   font-bold font-idgrotesk"
           target="_blank"
           rel="noopener noreferrer"
         >
           {" "}
           devfarouk 👨‍💻
         </Link>{" "}
-        (Inspirations from {" "}
+        (Inspirations from{" "}
         <Link
           href={"https://www.geekmaros.dev/"}
           className=" font-bold"

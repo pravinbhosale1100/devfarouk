@@ -12,10 +12,17 @@ const Header = () => {
       >
         <div className="flex flex-col gap-2">
           <span className=" font-medium text-lg">Hi, I'm</span>
-          <h1 className=" font-bold  text-6xl md:text-7xl">Farouk Mustapha</h1>
+          <h1 className=" font-bold  text-6xl md:text-7xl font-grotesk">
+            Farouk Mustapha
+          </h1>
         </div>
         <div className="relative">
-          <Badge variant={"secondary"}>A Front-end Engineer</Badge>
+          <Badge
+            variant={"secondary"}
+            className=" font-idgrotesk text-bases sm:text-xl"
+          >
+            A Front-end Engineer
+          </Badge>
           <p className="mt-2 ">
             I specialize in building WebApps using React, Next.js, and
             TypeScript, turning designs into engaging web experiences.
