@@ -33,7 +33,7 @@ const Navbar = () => {
           uk
         </p>
       </Link>
-      <div className="hidden md:flex items-center gap-2  font-idgrotesk uppercase">
+      <div className="hidden md:flex items-center gap-2  font-grotesk uppercase">
         <nav className="w-full flex flex-row items-center">
           <ul className="w-full flex flex-row justify-start items-center font-medium text-lg gap-4">
             {sections.map((section, id) => (
