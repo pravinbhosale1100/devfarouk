@@ -6,6 +6,7 @@ import Sidebar from "./components/Sidebar";
 import Copyright from "./sections/Copyright";
 import SplashScreenManager from "./components/SplashScreenManager";
 import { Providers } from "./providers";
+import { GoogleAnalytics } from "@next/third-parties/google";
 
 export const inter = Inter({
   subsets: ["latin"],
@@ -33,6 +34,7 @@ export default function RootLayout({
             <Copyright />
           </SplashScreenManager>
         </Providers>
+        <GoogleAnalytics gaId="G-FHL88G3PMS" />
       </body>
     </html>
   );
