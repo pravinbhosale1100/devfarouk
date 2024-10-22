@@ -138,15 +138,15 @@ export const projects = [
     liveLink: "https://berrystamp.com/",
     stacks: ["TypeScript", "React", "TailwindCss", "Redux"],
   },
-  // {
-  //   name: "BFN",
-  //   type: "Featured Project",
-  //   description:
-  //     "Developed a microsite for the BFN initiative, collaborating closely with content writers to create a visually appealing and intuitive platform. The site is designed with a focus on user experience, utilizing a clean and modern layout.",
-  //   image: "/bfn.webp",
-  //   liveLink: "https://www.programs-bfn.ca/",
-  //   stacks: ["TypeScript", "React", "TailwindCss", "AOS"],
-  // }
+  {
+    name: "BFN",
+    type: "Featured Project",
+    description:
+      "Developed a microsite for the BFN initiative, collaborating closely with content writers to create a visually appealing and intuitive platform. The site is designed with a focus on user experience, utilizing a clean and modern layout.",
+    image: "/bfn.webp",
+    liveLink: "https://www.programs-bfn.ca/",
+    stacks: ["TypeScript", "React", "TailwindCss", "AOS"],
+  },
   {
     name: "GSwift",
     type: "Featured Project",
