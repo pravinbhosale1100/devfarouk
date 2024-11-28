@@ -28,9 +28,9 @@ const Navbar = () => {
           Dev
         </h1>
         <p className="text-xl sm:text-2xl lg:text-2xl font-extrabold font-grotesk">
-          Far
+          Pravin Bh
           <ThemeSwitcher />
-          uk
+          sale
         </p>
       </Link>
       <div className="hidden md:flex items-center gap-2  font-grotesk uppercase">

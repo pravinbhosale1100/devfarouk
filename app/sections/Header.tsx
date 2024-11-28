@@ -13,7 +13,7 @@ const Header = () => {
         <div className="flex flex-col gap-2">
           <span className=" font-medium text-lg">Hi, I'm</span>
           <h1 className=" font-bold  text-6xl md:text-7xl font-grotesk">
-            Farouk Mustapha
+            Pravin Bhosale
           </h1>
         </div>
         <div className="relative">
