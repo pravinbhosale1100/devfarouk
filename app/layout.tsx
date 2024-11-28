@@ -10,7 +10,7 @@ import { GoogleAnalytics } from "@next/third-parties/google";
 
 export const inter = Inter({
   subsets: ["latin"],
-  display: "swap",
+  display: "swap", 
 });
 
 export const metadata: Metadata = {

@@ -36,7 +36,7 @@ const About = () => {
         </div>
         <div className="w-full lg:w-[50%] order-1 lg:order-2">
           <article>
-            Farouk Mustapha is a Frontend Developer based in Lagos, Nigeria,
+            Pravin Bhosale is a Frontend Developer based in Lagos, Nigeria,
             with 2 years of experience in the field. I have developed web
             applications using JavaScript and TypeScript.I love turning designs
             and ideas into cool web experiences, and work closely with Product
