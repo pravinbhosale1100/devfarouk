@@ -12,7 +12,7 @@ const Copyright = () => {
           rel="noopener noreferrer"
         >
           {" "}
-          devfarouk 👨‍💻
+          devPravin 👨‍💻
         </Link>{" "}
         (Inspirations from{" "}
         <Link

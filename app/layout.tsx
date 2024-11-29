@@ -14,7 +14,7 @@ export const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "DevFarouk Portfolio",
+  title: "DevPravin Portfolio",
   description: "Frontend Engineer",
 };
 
