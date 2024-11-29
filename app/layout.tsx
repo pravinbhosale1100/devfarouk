@@ -16,6 +16,9 @@ export const inter = Inter({
 export const metadata: Metadata = {
   title: "DevPravin Portfolio",
   description: "Frontend Engineer",
+  other:{
+    "google-site-verification":"CgueX8F_qxcA4EskItpNQLxdJn2CmQKLr5lDvTjsOrM"
+  }
 };
 
 export default function RootLayout({

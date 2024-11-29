@@ -4,17 +4,17 @@ const Copyright = () => {
   return (
     <div className="  py-6  flex flex-col justify-center items-center font-medium text-base sm:text-lg border-t ">
       <p className=" text-center">
-        Designed by
+        Designed and Devloped by
         <Link
-          href={"https://github.com/Farouk-ayo/devfarouk"}
+          href={"https://github.com/pravinbhosale1100/pravin-portfolio"}
           className=" text-secondary-color-3   font-bold font-idgrotesk"
           target="_blank"
           rel="noopener noreferrer"
         >
           {" "}
-          devPravin 👨‍💻
+          Pravin K. Bhosale👨‍💻
         </Link>{" "}
-        (Inspirations from{" "}
+        {/* (Inspirations from{" "}
         <Link
           href={"https://www.geekmaros.dev/"}
           className=" font-bold"
@@ -23,7 +23,7 @@ const Copyright = () => {
         >
           Geekmaros
         </Link>{" "}
-        )
+        ) */}
       </p>
       <div></div>
       <p className=" ">&copy; 2024 All rights reserved.</p>

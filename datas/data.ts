@@ -24,36 +24,36 @@ export const socialLinks = [
 
 export const technologies = [
   {
-    name: "NextJs",
-    iconLink: "https://cdn.simpleicons.org/nextdotjs",
+    name: "HTML",
+    iconLink: "https://cdn.simpleicons.org/html5",
+  },
+  {
+    name: "CSS",
+    iconLink: "https://cdn.simpleicons.org/css3",
+  },
+  {
+    name: "BootStrap",
+    iconLink: "https://cdn.simpleicons.org/bootstrap",
+  },
+  {
+    name: "JQuery",
+    iconLink: "https://cdn.simpleicons.org/jquery",
+  },
+  {
+    name: ".Net",
+    iconLink: "https://cdn.simpleicons.org/dotnet",
   },
   {
     name: "React",
     iconLink: "https://cdn.simpleicons.org/react",
   },
   {
-    name: "TailwindCss",
-    iconLink: "https://cdn.simpleicons.org/tailwindcss",
-  },
-  {
-    name: "Framer Motion",
-    iconLink: "https://cdn.simpleicons.org/framer",
-  },
-  {
-    name: "Sass",
-    iconLink: "https://cdn.simpleicons.org/sass",
+    name: "NextJs",
+    iconLink: "https://cdn.simpleicons.org/nextdotjs",
   },
   {
     name: "Git",
     iconLink: "https://cdn.simpleicons.org/git",
-  },
-  {
-    name: "Chakra UI",
-    iconLink: "https://cdn.simpleicons.org/chakraui",
-  },
-  {
-    name: "Shadcn/ui",
-    iconLink: "https://cdn.simpleicons.org/shadcnui",
   },
 ];
 
@@ -65,19 +65,19 @@ export const sections = [
 ];
 
 export const companies = [
-  "Pathpalz",
-  "Berrystamp",
-  "Busineess Prompt",
-  "Deep Focus",
-  "JustDo Startup",
+  "Aloha Technology",
+  // "Berrystamp",
+  // "Busineess Prompt",
+  // "Deep Focus",
+  // "JustDo Startup",
 ];
 
 export const companiesInfo = [
   {
-    title: "Lead Frontend Engineer",
-    company: "Pathpalz",
-    location: "Uk(remote)",
-    duration: "February 2023 - September 2024",
+    title: "Software Devloper",
+    company: "Aloha Technology",
+    location: "Pune, India",
+    duration: "June 2023 - Current ",
     roles: [
       "Implemented real-time tracking features for users to locate nearby commuters and accurately estimate arrival times, leveraging React tools and Tailwind CSS for enhanced styling",
       "Developed a ridesharing progressive web application using TypeScript and React, with seamless backend integration of geocoordinate data",

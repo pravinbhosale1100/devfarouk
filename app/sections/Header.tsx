@@ -21,18 +21,18 @@ const Header = () => {
             variant={"secondary"}
             className=" font-grotesk text-bases sm:text-xl"
           >
-            A Front-end Engineer
+        Full Stack Devloper specialize In Front End Devloping
           </Badge>
           <p className="mt-2 ">
-            I specialize in building WebApps using React, Next.js, and
-            TypeScript, turning designs into engaging web experiences.
+            I specialize in building WebApps using Asp Dot Net MVC, React, Next.js, and
+            JQuery, turning designs into engaging web experiences.
           </p>
         </div>
         <Button asChild variant={"outline"}>
           <Link
             target="_blank"
             rel="noopener noreferrer"
-            href={"mailto:your.mustaphafarouk41@gmail.com"}
+            href={"mailto:your.bhosalepravin40@gmail.com"}
             className="flex items-center border-black justify-center gap-3 px-5 py-2  font-bold w-max  border-[1px]  mt-5 "
           >
             Get in Touch
